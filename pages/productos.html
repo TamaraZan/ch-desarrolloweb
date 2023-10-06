@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es-ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link a bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- link a la hoja de estilos -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- link a la fuente de letra -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@300;400;700&display=swap" rel="stylesheet">
+
+    
+    <!-- COMPLETAR: nombre -->
+    <title>MEOW sublimaciones - Productos</title>
+</head>
+<body>
+    
+<header class="colores-header-footer ">
+    <nav>
+        <section class="nav-large">
+            <h1>MEOW sublimaciones</h1>
+            <ul>
+                <li><a href="../index.html"> Inicio </a></li>
+                <li><a href="./productos.html"> Productos </a></li>
+                <li><a href="./compras.html"> Comprar </a></li>
+                <li><a href="./nosotros.html"> Nosotros </a></li>
+                <li><a href="./faq.html"> Preguntas </a></li>
+            </ul>
+        </section>
+
+        <section class="navbar nav-small">
+            <div class="container-fluid">
+                <h1>MEOW sublimaciones</h1>
+                <button class="navbar-toggler hamburger-border" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon hamburger-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu">
+                        <li><a href="../index.html"> Inicio </a></li>
+                        <li><a href="./productos.html"> Productos </a></li>
+                        <li><a href="./compras.html"> Comprar </a></li>
+                        <li><a href="./nosotros.html"> Nosotros </a></li>
+                        <li><a href="./faq.html"> Preguntas </a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </nav>
+</header>
+
+
+
+<!-- COMPLETAR:main -->
+<main>
+    <div class="productos">
+        <h2>Productos</h2>
+        <p>Conocé los productos que ofrecemos e inspirate viendo algunos de los productos que hicimos anteriormente.</p>
+        
+        <!-- COMPLETAR: productos  -->
+        <div>
+            <div>
+                <h3>Tazas</h3>
+                <p>...explicaciones?... medidas...</p>
+                <!-- <div class="productos-imagenes">
+                    <img src="../assets/productos/tazas/taza1.webp" alt="Taza">
+                    <img src="../assets/productos/tazas/taza2.webp" alt="Taza">
+                    <img src="../assets/productos/tazas/taza3.webp" alt="Taza">
+                    <img src="../assets/productos/tazas/taza4.webp" alt="Taza">
+                    <img src="../assets/productos/tazas/taza5.webp" alt="Taza">
+                </div> -->
+
+                <!-- COMPLETAR: personalizar bootstrap (tamaño, flechas, circulos en vez de lineas abajo?, ...) -->
+                <div id="carousel-tazas" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel-tazas" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carousel-tazas" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carousel-tazas" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carousel-tazas" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carousel-tazas" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../assets/productos/tazas/taza1.webp" class="d-block w-100" alt="Taza">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/productos/tazas/taza2.webp" class="d-block w-100" alt="Taza">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/productos/tazas/taza3.webp" class="d-block w-100" alt="Taza">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/productos/tazas/taza4.webp" class="d-block w-100" alt="Taza">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/productos/tazas/taza5.webp" class="d-block w-100" alt="Taza">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-tazas"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-tazas"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </div>
+            <div>
+                <h3>Jarros Térmicos</h3>
+                <p>...explicaciones?... medidas...</p>
+                <!-- <div class="productos-imagenes">
+                    <img src="../assets/productos/jarros-termicos/jarro1.webp" alt="Jarro Térmico">
+                    <img src="../assets/productos/jarros-termicos/jarro2.webp" alt="Jarro Térmico">
+                    <img src="../assets/productos/jarros-termicos/jarro3.webp" alt="Jarro Térmico">
+                    <img src="../assets/productos/jarros-termicos/jarro4.webp" alt="Jarro Térmico">
+                    <img src="../assets/productos/jarros-termicos/jarro5.webp" alt="Jarro Térmico">
+                </div> -->
+
+                <!-- COMPLETAR: personalizar bootstrap (tamaño, flechas, circulos en vez de lineas abajo?, ...) -->
+                <div id="carousel-jarro" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel-jarro" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carousel-jarro" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carousel-jarro" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carousel-jarro" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carousel-jarro" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../assets/productos/jarros-termicos/jarro1.webp" class="d-block w-100" alt="Jarro Térmico">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/productos/jarros-termicos/jarro2.webp" class="d-block w-100" alt="Jarro Térmico">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/productos/jarros-termicos/jarro3.webp" class="d-block w-100" alt="Jarro Térmico">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/productos/jarros-termicos/jarro4.webp" class="d-block w-100" alt="Jarro Térmico">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/productos/jarros-termicos/jarro5.webp" class="d-block w-100" alt="Jarro Térmico">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-jarro"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-jarro"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </div>
+            <div>
+                <h3>Delantales</h3>
+                <p>...explicaciones?... medidas...</p>
+                <!-- <div class="productos-imagenes">
+                    <img src="../assets/productos/delantales/delantales1.webp" alt="Delantal">
+                    <img src="../assets/productos/delantales/delantales2.webp" alt="Delantal">
+                    <img src="../assets/productos/delantales/delantales3.webp" alt="Delantal">
+                    <img src="../assets/productos/delantales/delantales4.webp" alt="Delantal">
+                    <img src="../assets/productos/delantales/delantales5.webp" alt="Delantal">
+                </div> -->
+
+                <!-- COMPLETAR: personaliza bootstrap -->
+                <div id="carousel-delantales" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel-delantales" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carousel-delantales" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carousel-delantales" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carousel-delantales" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carousel-delantales" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../assets/productos/delantales/delantales1.webp" class="d-block w-100" alt="Delantal">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/productos/delantales/delantales2.webp" class="d-block w-100" alt="Delantal">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/productos/delantales/delantales3.webp" class="d-block w-100" alt="Delantal">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/productos/delantales/delantales4.webp" class="d-block w-100" alt="Delantal">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/productos/delantales/delantales5.webp" class="d-block w-100" alt="Delantal">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-delantales"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-delantales"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </div>
+            <div>
+                <h3>Mousepads</h3>
+                <p>...explicaciones?... medidas...</p>
+                <!-- <div class="productos-imagenes">
+                    <img src="../assets/productos/mousepads/mousepad1.webp" alt="Mousepad">
+                    <img src="../assets/productos/mousepads/mousepad2.webp" alt="Mousepad">
+                    <img src="../assets/productos/mousepads/mousepad3.webp" alt="Mousepad">
+                    <img src="../assets/productos/mousepads/mousepad4.webp" alt="Mousepad">
+                    <img src="../assets/productos/mousepads/mousepad5.webp" alt="Mousepad">
+                </div> -->
+
+                <!-- COMPLETAR: personalizar bootstrap (tamaño, flechas, circulos en vez de lineas abajo?, ...) -->
+                <div id="carousel-mousepad" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel-mousepad" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carousel-mousepad" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carousel-mousepad" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carousel-mousepad" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carousel-mousepad" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../assets/productos/mousepads/mousepad1.webp" class="d-block w-100" alt="Mousepad">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/productos/mousepads/mousepad2.webp" class="d-block w-100" alt="Mousepad">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/productos/mousepads/mousepad3.webp" class="d-block w-100" alt="Mousepad">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/productos/mousepads/mousepad4.webp" class="d-block w-100" alt="Mousepad">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/productos/mousepads/mousepad5.webp" class="d-block w-100" alt="Mousepad">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-mousepad"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-mousepad"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </div>
+            
+        </div>
+    
+    </div>
+
+
+
+    </main>
+
+
+
+    <!-- COMPLETAR: footer -->
+    <footer class="colores-header-footer">
+
+        <!-- COMPLETAR: datos de la marca -->
+        <section class="footer-grid">
+        <div>
+            <ul>
+                <li>Francisco Bilbao 2241</li>
+                <li>meowsublimaciones@gmail.com</li>
+                <li>Whatsapp: 15-1111-1111</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./faq.html">Preguntas Frecuentes</a></li>
+                <li><a href="./nosotros.html #contacto">Contactanos</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-redes">
+            <div class="footer-instagram"><a href="#" target="_blank"><img src="../assets/iconos/instagram.png" alt="logo instagram"></a></div>
+            <div class="footer-facebook"><a href="#" target="_blank"><img src="../assets/iconos/facebook.png" alt="logo facebook"></a></div>
+            <div class="footer-twitter"><a href="#" target="_blank"><img src="../assets/iconos/twitter.png" alt="logo twitter"></a></div>
+        </div>
+        </section>
+
+
+        <hr />
+        <div class="footer-copyright">
+            <!-- COMPLETAR: copyright -->
+            <ul>
+                <li>
+                    <a href="https://www.flaticon.es/resultados?author_id=1143&style_id=&type=standard&word=logo"
+                        title="iconos redes sociales" target="_blank">Iconos de redes sociales creados por Rakib Hassan
+                        Rahim -
+                        Flaticon</a>
+                </li>
+                
+            </ul>
+        </div>
+    </footer>
+
+    <!-- link de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>
