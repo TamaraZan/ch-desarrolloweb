@@ -394,6 +394,23 @@ details[open] summary {
 	background-image: url(../assets/iconos/arrow-right.svg);
 }
 
+.carousel-main img {
+  cursor: zoom-in;
+}
+.modal-body {
+  padding: 0;
+}
+.modals button {
+  position: absolute;
+  right: 1.5%;
+  top: 2%;
+  background-image: url(../assets/iconos/compress.svg);
+  transform: scale(2.5);
+}
+.modals button:focus {
+  box-shadow: none;
+}
+
 
 
 
