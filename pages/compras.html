@@ -12,161 +12,135 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@300;400;700&display=swap" rel="stylesheet">
 
-    
-    
     <title>MEOW sublimaciones - Comprar</title>
 </head>
+
 <body>
-    
-<header class="colores-header-footer ">
-    <nav>
-        <section class="nav-large">
-            <h1>MEOW sublimaciones</h1>
-            <ul>
-                <li><a href="../index.html"> Inicio </a></li>
-                <li><a href="./productos.html"> Productos </a></li>
-                <li><a href="./compras.html"> Comprar </a></li>
-                <li><a href="./nosotros.html"> Nosotros </a></li>
-                <li><a href="./faq.html"> Preguntas </a></li>
-            </ul>
-        </section>
-
-        <section class="navbar nav-small">
-            <div class="container-fluid">
+    <header class="colores-header-footer ">
+        <nav>
+            <section class="nav-large">
                 <h1>MEOW sublimaciones</h1>
-                <button class="navbar-toggler hamburger-button" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon hamburger-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu">
-                        <li><a href="../index.html"> Inicio </a></li>
-                        <li><a href="./productos.html"> Productos </a></li>
-                        <li><a href="./compras.html"> Comprar </a></li>
-                        <li><a href="./nosotros.html"> Nosotros </a></li>
-                        <li><a href="./faq.html"> Preguntas </a></li>
-                    </ul>
+                <ul>
+                    <li><a href="../index.html"> Inicio </a></li>
+                    <li><a href="./productos.html"> Productos </a></li>
+                    <li><a href="./compras.html"> Comprar </a></li>
+                    <li><a href="./nosotros.html"> Nosotros </a></li>
+                    <li><a href="./faq.html"> Preguntas </a></li>
+                </ul>
+            </section>
+
+            <section class="navbar nav-small">
+                <div class="container-fluid">
+                    <h1>MEOW sublimaciones</h1>
+                    <button class="navbar-toggler hamburger-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon hamburger-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu">
+                            <li><a href="../index.html"> Inicio </a></li>
+                            <li><a href="./productos.html"> Productos </a></li>
+                            <li><a href="./compras.html"> Comprar </a></li>
+                            <li><a href="./nosotros.html"> Nosotros </a></li>
+                            <li><a href="./faq.html"> Preguntas </a></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-    </nav>
-</header>
+        </nav>
+    </header>
 
-
-
-<!-- COMPLETAR:main -->
-<main>
-    <div class="compras">
-        <div>
-            <!-- COMPLETAR: borrar relleno -->
-            <h2>Comprar</h2>
-            <p> Pedí tu presupuesto....... explicaciones ...  ..... </p>
-        </div>
-
-        <div class="compras-columnas">
+    <!-- COMPLETAR:main -->
+    <main>
+        <div class="compras">
             <div>
+                <!-- COMPLETAR: borrar relleno -->
+                <h2>Comprar</h2>
+                <p> Pedí tu presupuesto....... explicaciones ...  ..... </p>
+            </div>
+
+            <div class="compras-columnas">
+                <div class="form">
+                    <form action="">
+                        <div>
+                            <label for="nombre">Nombre: </label>
+                            <input type="text" id="nombre" placeholder="Juan Martinez">
+                        </div>
+                        <div>
+                            <label for="email">E-mail:* </label>
+                            <input type="email" id="email" placeholder="juan@mail.com" required>
+                        </div>
+                        <div>
+                            <label for="producto">Elegí tu producto:*</label>
+                            <select name="product" id="producto" required>
+                                <option value="" disabled selected hidden> - - Elegí tu producto - - </option>
+                                <option value="taza"> Taza </option>
+                                <option value="jarro-termicos"> Jarro Térmico </option>
+                                <option value="mousepad"> Mousepad </option>
+                                <option value="delantal"> Delantal </option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="formFileMultiple" class="form-label">Mandanos tu imagen:</label>
+                            <input class="form-control input-imagenes" type="file" id="formFileMultiple" multiple>
+                        </div>
+                        <div>
+                            <textarea name="comentarios" cols="30" rows="10" placeholder="Escribí tu comentario..." maxlength="1000"></textarea>
+                        </div>
+                        <div>
+                            <input type="reset" value="Borrar">
+                            <input type="submit" value="Enviar">
+                        </div>
+                    </form>
+                </div>
                 <img src="../assets/taza-comprar.webp" alt="taza con facturas">
             </div>
 
-            <div class="form">
-                <form action="">
-                    <div>
-                        <label for="nombre">Nombre: </label>
-                        <input type="text" id="nombre" placeholder="Juan Martinez">
-                    </div>
-
-                    <div>
-                        <label for="email">E-mail:* </label>
-                        <input type="email" id="email" placeholder="juan@mail.com" required>
-                    </div>
-
-                    <div>
-                        <label for="producto">Elegí tu producto:*</label>
-                        <select name="product" id="producto" required>
-                            <option value="" disabled selected hidden> - - Elegí tu producto - - </option>
-                            <option value="taza"> Taza </option>
-                            <option value="jarro-termicos"> Jarro Térmico </option>
-                            <option value="mousepad"> Mousepad </option>
-                            <option value="delantal"> Delantal </option>
-                        </select>
-                    </div>
-
-                    <!-- <div>
-                        <input type="button" value="Mandanos tu imagen" onclick="">
-                    </div> -->
-                    <!-- COMPLETAR: personalizar(tamaño, textos, ...) -->
-                    <div class="mb-3">
-                        <label for="formFileMultiple" class="form-label">Mandanos tu imagen:</label>
-                        <input class="form-control" type="file" id="formFileMultiple" multiple>
-                    </div>
-
-                    <div>
-                        <textarea name="comentarios" cols="30" rows="10" placeholder="Escribí tu comentario..." maxlength="1000"></textarea>
-                    </div>
-
-                    <div>
-                        <input type="reset" value="Borrar">
-                        <input type="submit" value="Enviar">
-                    </div>
-                </form>
+            <div>
+                <p>Si tenes dudas, consulta nuestras <a href="./faq.html" class="link">preguntas frecuentes</a> o <a href="./nosotros.html#contacto" class="link">contactanos</a>!</p>
             </div>
         </div>
+    </main>
 
-        <div>
-            <p>Si tenes dudas, consulta nuestras <a href="./faq.html" class="link">preguntas frecuentes</a> o <a href="./nosotros.html#contacto" class="link">contactanos</a>!</p>
-        </div>
-    </div>
-</main>
+    <footer class="colores-header-footer">
+        <section class="footer-grid">
+            <div>
+                <ul>
+                    <li>Francisco Bilbao 2241</li>
+                    <li>meowsublimaciones@gmail.com</li>
+                    <li>Whatsapp: 15-1111-1111</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="./nosotros.html">Nosotros</a></li>
+                    <li><a href="./faq.html">Preguntas Frecuentes</a></li>
+                    <li><a href="./nosotros.html #contacto">Contactanos</a></li>
+                </ul>
+            </div>
 
+            <div class="footer-redes">
+                <div class="footer-instagram"><a href="#" target="_blank"><img src="../assets/iconos/instagram.png" alt="logo instagram"></a></div>
+                <div class="footer-facebook"><a href="#" target="_blank"><img src="../assets/iconos/facebook.png" alt="logo facebook"></a></div>
+                <div class="footer-twitter"><a href="#" target="_blank"><img src="../assets/iconos/twitter.png" alt="logo twitter"></a></div>
+            </div>
+        </section>
 
+        <hr/>
 
-<!-- COMPLETAR: footer -->
-<footer class="colores-header-footer">
+        <section class="footer-copyright">
+            <!-- COMPLETAR: copyright -->
+            <ul>
+                <li>
+                    <a href="https://www.flaticon.es/resultados?author_id=1143&style_id=&type=standard&word=logo" title="iconos redes sociales" target="_blank">Iconos de redes sociales creados por Rakib Hassan Rahim - Flaticon</a>
+                </li>
+            </ul>
+        </section>
+    </footer>
 
-    <!-- COMPLETAR: datos de la marca -->
-    <section class="footer-grid">
-    <div>
-        <ul>
-            <li>Francisco Bilbao 2241</li>
-            <li>meowsublimaciones@gmail.com</li>
-            <li>Whatsapp: 15-1111-1111</li>
-        </ul>
-    </div>
-    <div>
-        <ul>
-            <li><a href="./nosotros.html">Nosotros</a></li>
-            <li><a href="./faq.html">Preguntas Frecuentes</a></li>
-            <li><a href="./nosotros.html #contacto">Contactanos</a></li>
-        </ul>
-    </div>
-
-    <div class="footer-redes">
-        <div class="footer-instagram"><a href="#" target="_blank"><img src="../assets/iconos/instagram.png" alt="logo instagram"></a></div>
-        <div class="footer-facebook"><a href="#" target="_blank"><img src="../assets/iconos/facebook.png" alt="logo facebook"></a></div>
-        <div class="footer-twitter"><a href="#" target="_blank"><img src="../assets/iconos/twitter.png" alt="logo twitter"></a></div>
-    </div>
-    </section>
-
-
-    <hr />
-    <div class="footer-copyright">
-        <!-- COMPLETAR: copyright -->
-        <ul>
-            <li>
-                <a href="https://www.flaticon.es/resultados?author_id=1143&style_id=&type=standard&word=logo"
-                    title="iconos redes sociales" target="_blank">Iconos de redes sociales creados por Rakib Hassan
-                    Rahim -
-                    Flaticon</a>
-            </li>
-            
-        </ul>
-    </div>
-</footer>
-
-<!-- link de bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
+    <!-- link de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
