@@ -308,9 +308,13 @@ details summary {
   text-shadow: 0px 0px 5px #9172a34f;
 }
 details p {
+  padding: 0.3vw 1.5vw;
+  margin: 0;
+}
+details div {
   border-radius: 0 0 10px 10px;
   background-color: #9172a3;
-  padding: 2px 6px;
+  padding: 0.5vw 0;
   margin-bottom: 4px;
   box-shadow: 3px 3px 4px #00000080;
 }
