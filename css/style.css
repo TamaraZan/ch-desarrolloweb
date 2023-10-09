@@ -200,6 +200,21 @@ textarea {
   height: 100px;
 }
 
+.botones-carousel [data-bs-target] {
+	background-color: #4a0b6e;
+  border: solid #c9c0ceaf 2.5px;
+  margin-bottom: 6px;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+.carousel-anterior > :first-child {
+	background-image: url(../assets/iconos/arrow-left.svg);
+}
+.carousel-siguiente > :first-child {
+	background-image: url(../assets/iconos/arrow-right.svg);
+}
+
 
 
 
@@ -212,7 +227,7 @@ textarea {
 
 /* main inicio */
 .inicio-intro {
-  padding: 15vh;
+  padding: 15vw;
   text-align: center;
 }
 .inicio-intro p{
@@ -240,8 +255,23 @@ textarea {
   border-radius: 15px;
 }
 .inicio-productos div img {
-  height: 150px;
-  margin: 15px 5px;
+  height: 20vw;
+  margin: 15px 0.5%;
+}
+#carousel-inicio-sm {
+  display: none;
+}
+/* carousel */
+.row {
+  gap: 2%;
+  justify-content: center;
+  padding: 0 10%;
+}
+.row img {
+  height: 20vw;
+  width: 30%;
+  object-fit: cover;
+  padding: 0;
 }
 
 
@@ -400,22 +430,7 @@ details[open] summary {
   margin: 0;
 }
 
-.botones-carousel [data-bs-target] {
-	background-color: #4a0b6e;
-  border: solid #c9c0ceaf 2.5px;
-  margin-bottom: 6px;
-  width: 10px;
-  height: 10px;
-  border-radius: 100%;
-}
-.carousel-anterior > :first-child {
-	background-image: url(../assets/iconos/arrow-left.svg);
-}
-.carousel-siguiente > :first-child {
-	background-image: url(../assets/iconos/arrow-right.svg);
-}
-
-.carousel-main img {
+.productos .carousel-main img {
   cursor: zoom-in;
 }
 .modal-body {
@@ -496,15 +511,24 @@ details[open] summary {
     justify-content: center;
   }
 
-  /* main nosotros */
-  .nosotros section > div {
-    grid-template-columns: 1fr;
+  /* main index */
+  .inicio-intro {
+    padding: 9vw;
   }
-  .nosotros > img {
-    width: 55vw;
+  .inicio-intro p {
+    font-size: 5.5vw;
   }
-  .contacto > div {
-    padding-bottom: 10px;
+  #carousel-inicio-lg {
+    display: none;
+  }
+  #carousel-inicio-sm {
+    display: initial;
+  }
+  #carousel-inicio-sm img {
+    height: 50vw;
+    width: 80%;
+    margin: 6% 10%;
+    object-fit: cover;
   }
 
   /* main compras */
@@ -523,6 +547,17 @@ details[open] summary {
     border-radius: 50px;
   } 
   
+  /* main nosotros */
+  .nosotros section > div {
+    grid-template-columns: 1fr;
+  }
+  .nosotros > img {
+    width: 55vw;
+  }
+  .contacto > div {
+    padding-bottom: 10px;
+  }
+
   /* main productos */
   .productos-cards > div {
     margin: 0 0 30px 0;
