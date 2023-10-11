@@ -263,7 +263,7 @@ textarea {
   padding: 8vw 15vw;
   text-align: center;
 }
-.inicio-intro p{
+.inicio-intro > p{
   font-size:1.7rem;
   text-shadow: 2px 2px 7px #c9c0ce;
 }
@@ -286,20 +286,17 @@ textarea {
   justify-content: space-evenly;
   border-radius: 15px;
 }
-.inicio-productos div img {
-  height: 20vw;
-  margin: 15px 0.5%;
-}
-#carousel-inicio-sm {
+.inicio-productos > #carousel-inicio-sm {
   display: none;
 }
 /* carousel */
-.row {
+.inicio-productos > .carousel > .carousel-inner > .carousel-item > .row {
   gap: 2%;
   justify-content: center;
   padding: 0 10%;
 }
-.row img {
+.inicio-productos > .carousel > .carousel-inner > .carousel-item > .row > img {
+  margin: 15px 0.5%;
   height: 20vw;
   width: 30%;
   object-fit: cover;
@@ -311,8 +308,9 @@ textarea {
   align-items: center;
 }
 .inicio-reviews > div {
+  justify-content: center;
   padding: 0;
-  margin: 0 2% 50px 2%;
+  margin: 0 2% 4vw 2%;
 }
 .inicio-reviews > div > div {
   padding-top: 2%;
@@ -324,9 +322,13 @@ textarea {
   -webkit-backdrop-filter: blur( 9px );
   border-radius: 5px;
   border: 1px solid #ffffff2e;
+  --bs-card-title-spacer-y: 0;
 }
-.inicio-reviews .card-header {
+.inicio-reviews > div > div > div > div > .card-header {
   height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -586,7 +588,7 @@ details[open] summary {
   #carousel-inicio-lg {
     display: none;
   }
-  #carousel-inicio-sm {
+  .inicio-productos > #carousel-inicio-sm {
     display: initial;
   }
   #carousel-inicio-sm img {
