@@ -161,7 +161,6 @@ h2 {
   font-size: 1.4rem;
 }
 h4 {
-  /* background-color: red; */
   text-decoration: underline;
   font-size: 20px;
   margin-top: 1em;
@@ -248,9 +247,6 @@ textarea {
   text-shadow: none;
   border-radius: 5px;
 }
-.fondo-oscuro p {
-  margin: 2vw;
-}
 
 
 
@@ -282,7 +278,6 @@ textarea {
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(1px);
   border-radius: 20px;
-  /* border-radius: 20px 20px 0 0; */
 }
 .inicio-productos > div {
   padding: 10px 0px;
@@ -310,11 +305,29 @@ textarea {
   object-fit: cover;
   padding: 0;
 }
-/* .inicio-reviews {
+.inicio-reviews {
   display: flex;
   flex-direction: column;
   align-items: center;
-} */
+}
+.inicio-reviews > div {
+  padding: 0;
+  margin: 0 2% 50px 2%;
+}
+.inicio-reviews > div > div {
+  padding-top: 2%;
+}
+.inicio-reviews > div > div > div {
+  background: #9c72bd69;
+  box-shadow: 0 8px 32px 0 #1f26875e;
+  backdrop-filter: blur( 9px );
+  -webkit-backdrop-filter: blur( 9px );
+  border-radius: 5px;
+  border: 1px solid #ffffff2e;
+}
+.inicio-reviews .card-header {
+  height: 65px;
+}
 
 
 
@@ -387,6 +400,7 @@ details summary {
 details p {
   padding: 0.3vw 1.5vw;
   margin: 0;
+  text-shadow: none;
 }
 details div {
   border-radius: 0 0 10px 10px;
@@ -413,14 +427,17 @@ details[open] summary {
 .nosotros h1 {
   padding-bottom: 2vw;
 }
-.conocenos img {
-  object-fit: cover;
-}
 .nosotros section > div {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 55fr 45fr;
   align-items: center;
-  column-gap: 7vw;
+  column-gap: 4vw;
+}
+.conocenos div {
+  margin: 2.5vw 0 1.5vw 4vw;
+}
+.conocenos img {
+  object-fit: cover;
 }
 .contacto-mapa {
   grid-row: 2;
@@ -552,8 +569,6 @@ details[open] summary {
     display: flex;
     flex-wrap: wrap-reverse;
     justify-content: space-evenly;
-    /* padding: initial 5vw; */
-    /* margin: 0 10vw; */
     gap: 20px;
   }
   .footer-redes {
@@ -561,12 +576,12 @@ details[open] summary {
     justify-content: center;
   }
 
-  /* main index */
+  /* main inicio */
   .inicio-intro {
     padding: 9vw;
   }
   .inicio-intro p {
-    font-size: 5.5vw;
+    font-size: calc(1.3rem + .6vw);
   }
   #carousel-inicio-lg {
     display: none;
@@ -579,6 +594,9 @@ details[open] summary {
     width: 80%;
     margin: 6% 10%;
     object-fit: cover;
+  }
+  .inicio-reviews .card-header {
+    height: auto;
   }
 
   /* main compras */
@@ -603,6 +621,9 @@ details[open] summary {
   /* main nosotros */
   .nosotros section > div {
     grid-template-columns: 1fr;
+  }
+  .conocenos div {
+    margin: 4vw 5.5vw 0 5.5vw;
   }
   .contacto > div {
     padding-bottom: 10px;
