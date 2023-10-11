@@ -160,11 +160,6 @@ h1 {
 h2 {
   font-size: 1.4rem;
 }
-h4 {
-  text-decoration: underline;
-  font-size: 20px;
-  margin-top: 1em;
-}
 .link {
   text-decoration: underline;
   text-shadow: 0px 0px 5px #4a0b6e;
@@ -486,6 +481,11 @@ details[open] summary {
 }
 .productos-cards p {
   margin: 0;
+}
+.productos .productos-cards > div > div > h3 {
+  text-decoration: underline;
+  font-size: 20px;
+  margin-top: 0.5em;
 }
 
 .productos .carousel-main img {
