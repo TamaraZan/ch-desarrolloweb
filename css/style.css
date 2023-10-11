@@ -461,7 +461,7 @@ details[open] summary {
   margin: 0 5vw 30px 5vw;
   display: grid;
   grid-template-columns: repeat(2, 48%);
-  grid-template-rows: 30% auto;
+  /* grid-template-rows: 5.5rem auto; */
   column-gap: 4%;
 
   background: #9c72bd69;
