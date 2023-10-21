@@ -1,10 +1,6 @@
 // hecho (tentativo)(limpiar)
 
 
-//chequear cómo poner este:
-// header .logo * {
-//     height: 100%;
-// }
 
 
 /* header */
@@ -14,18 +10,14 @@ header {
         section {
             div {
                 .logo {
-                    display: flex;
-                    justify-content: center;
-                    height: 100px;
-                    * {
+                    @include flex (n/a, center);
+                    height: 100px;//reducir la imagen a 100px de alto?
+                    a {
                         height: 100%;
+                        img{
+                            height: 100%;
+                        }
                     }
-                    // a {
-                    //     //height: 100%;
-                    //     img{
-                    //         //height: 100%;
-                    //     }
-                    // }
                 }
                 div {
                     ul {
@@ -39,7 +31,6 @@ header {
                             padding: 1rem 0rem;
                             &:hover {
                                 background-color: $violeta-claro;
-                                text-shadow: 0px 0px 5px #9172a3;
                             }
                             a {
                                 padding: 1rem 0rem;
@@ -48,7 +39,8 @@ header {
                                     width: 100%;
                                     background-color: transparent;
                                     border: none;
-                                    color: inherit;}
+                                    color: inherit;
+                                }
                             }
                         }
                     }

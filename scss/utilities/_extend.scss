@@ -1,6 +1,6 @@
 
 
-//extend?
+//extend? o paso a otro lado?
 // .compras, .faq, .nosotros, .productos 
 %fondo {
     padding: 1.2vw 4vw;
@@ -10,7 +10,7 @@
 }
 // main img:not(.separador), footer img 
 %img {
-    border-radius: $img-radius;
+    border-radius: $radius;
     @include box-shadow(10px, 10px, 12px, -2px, #000000a6);
 }
     

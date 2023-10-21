@@ -6,11 +6,9 @@
 .form {
     max-width: 400px;
     padding: 3%;
-    border-radius: 5px 25px;
-    @include glassmorphism;
+    @include glassmorphism($radius 25px, $glass-blur);
     form div {
-        display: flex;
-        flex-direction: column;
+        @include flex (columna, n/a);
         width: 97%;
         label {
             margin: 0px 5px;
@@ -22,7 +20,7 @@
             background-color: $blanco;
             &:not(label):focus {
                 outline: $violeta-claro solid 2px;
-                box-shadow: 0 0 10px $violeta-claro;
+                @include box-shadow(0, 0, 10px, 0, $violeta-claro);
             }
         }
         textarea {

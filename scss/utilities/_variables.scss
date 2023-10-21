@@ -5,8 +5,14 @@
 $blanco: #c9c0ce;
 $violeta: #4a0b6e;
 $violeta-claro: #5b1f7e;
-$lila: #9172a3; //faq, test with #a98ac1 (better contrast)
+// $lila: #9172a3; //faq, test with #a98ac1 (better contrast)
 $lila: #a98ac1;
 
 
+//reemplazar por $radius
 $img-radius: 5px;
+//border-radius basico para todo el sitio
+$radius: 5px;
+$faq-accord-radius: 10px;
+
+$glass-blur: 9px;

@@ -5,7 +5,7 @@
   -webkit-backdrop-filter: blur(1.8px);
 }
 
-body main img {
+footer .footer-grid .footer-redes div a img, body main img {
   border-radius: 5px;
   box-shadow: 10px 10px 12px -2px rgba(0, 0, 0, 0.6509803922);
   -webkit-box-shadow: 10px 10px 12px -2px rgba(0, 0, 0, 0.6509803922);
@@ -68,13 +68,13 @@ body main .separador {
 .form {
   max-width: 400px;
   padding: 3%;
-  border-radius: 5px 25px;
   background: rgba(156, 114, 189, 0.4117647059);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.368627451);
   -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.368627451);
   -moz-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.368627451);
   backdrop-filter: blur(9px);
   -webkit-backdrop-filter: blur(9px);
+  border-radius: 5px 25px;
   border: 1px solid rgba(255, 255, 255, 0.1803921569);
 }
 .form form div {
@@ -93,7 +93,9 @@ body main .separador {
 }
 .form form div *:not(label):not(label):focus {
   outline: #5b1f7e solid 2px;
-  box-shadow: 0 0 10px #5b1f7e;
+  box-shadow: 0 0 10px 0 #5b1f7e;
+  -webkit-box-shadow: 0 0 10px 0 #5b1f7e;
+  -moz-box-shadow: 0 0 10px 0 #5b1f7e;
 }
 .form form div textarea {
   height: 100px;
@@ -130,9 +132,13 @@ header {
 header nav section div .logo {
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 100px;
 }
-header nav section div .logo * {
+header nav section div .logo a {
+  height: 100%;
+}
+header nav section div .logo a img {
   height: 100%;
 }
 header nav section div div ul {
@@ -148,7 +154,6 @@ header nav section div div ul li {
 }
 header nav section div div ul li:hover {
   background-color: #5b1f7e;
-  text-shadow: 0px 0px 5px #9172a3;
 }
 header nav section div div ul li a {
   padding: 1rem 0rem;
@@ -180,10 +185,12 @@ header nav .nav-small {
   padding: 20px;
   background: rgba(156, 114, 189, 0.4117647059);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.368627451);
-  border: 1px solid rgba(255, 255, 255, 0.1803921569);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.368627451);
+  -moz-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.368627451);
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(1px);
   border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1803921569);
   /* carousel */
 }
 .inicio-productos #carousel-inicio-sm {
@@ -216,6 +223,7 @@ header nav .nav-small {
 .inicio-reviews {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 .inicio-reviews .row {
@@ -229,6 +237,8 @@ header nav .nav-small {
 .inicio-reviews .row .card-size .card {
   background: rgba(156, 114, 189, 0.4117647059);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.368627451);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.368627451);
+  -moz-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.368627451);
   backdrop-filter: blur(9px);
   -webkit-backdrop-filter: blur(9px);
   border-radius: 5px;
@@ -238,8 +248,8 @@ header nav .nav-small {
 .inicio-reviews .row .card-size .card .card-header {
   height: 65px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 /* main compras */
@@ -256,8 +266,8 @@ header nav .nav-small {
   padding: 3% 0;
   display: grid;
   grid-template-columns: repeat(2, 49%);
-  gap: 2%;
   align-items: center;
+  gap: 2%;
   justify-items: center;
 }
 .compras .compras-columnas img {
@@ -266,13 +276,7 @@ header nav .nav-small {
   max-width: 440px;
   object-fit: cover;
 }
-.compras .compras-columnas .form form div input {
-  width: 100%;
-}
-.compras .compras-columnas .form form div textarea {
-  width: 100%;
-}
-.compras .compras-columnas .form form div select {
+.compras .compras-columnas .form form div input, .compras .compras-columnas .form form div textarea, .compras .compras-columnas .form form div select {
   width: 100%;
 }
 
@@ -297,10 +301,12 @@ header nav .nav-small {
 .faq div details summary {
   padding: 15px 2.5vw;
   background-color: #4a0b6e;
-  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5019607843);
-  cursor: pointer;
   color: #c9c0ce;
-  text-shadow: 0px 0px 5px rgba(145, 114, 163, 0.3098039216);
+  box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.5019607843);
+  -webkit-box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.5019607843);
+  -moz-box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.5019607843);
+  cursor: pointer;
+  text-shadow: none;
 }
 .faq div details[open] summary {
   background-color: #5b1f7e;
@@ -310,7 +316,9 @@ header nav .nav-small {
   background-color: #a98ac1;
   padding: 0.5vw 0;
   margin-bottom: 4px;
-  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5019607843);
+  box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.5019607843);
+  -webkit-box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.5019607843);
+  -moz-box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.5019607843);
 }
 .faq div details div p {
   padding: 0.3vw 1.5vw;
@@ -322,6 +330,7 @@ header nav .nav-small {
 .nosotros {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding-bottom: 5vw;
 }
@@ -336,7 +345,7 @@ header nav .nav-small {
   display: grid;
   grid-template-columns: 55fr 45fr;
   align-items: center;
-  column-gap: 4vw;
+  gap: 0 4vw;
 }
 .nosotros section .conocenos div {
   margin: 2.5vw 0 1.5vw 4vw;
@@ -344,11 +353,20 @@ header nav .nav-small {
 .nosotros section .conocenos img {
   object-fit: cover;
 }
+.nosotros section .seg-titulo {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 700;
+  padding-top: 1.5vw;
+  padding-bottom: 0.8vw;
+  text-shadow: 1px 1px 3px #5b1f7e;
+  padding-bottom: 2vw;
+}
 .nosotros section .contacto {
   display: grid;
   grid-template-columns: 50fr 50fr;
   align-items: center;
-  column-gap: 8vw;
+  gap: 0 8vw;
 }
 .nosotros section .contacto * {
   max-width: 100%;
@@ -369,28 +387,26 @@ header nav .nav-small {
   margin: 0 5vw 30px 5vw;
   display: grid;
   grid-template-columns: repeat(2, 48%);
-  column-gap: 4%;
-  border-radius: 5px;
+  align-items: center;
+  gap: 0 4%;
   background: rgba(156, 114, 189, 0.4117647059);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.368627451);
   -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.368627451);
   -moz-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.368627451);
   backdrop-filter: blur(9px);
   -webkit-backdrop-filter: blur(9px);
+  border-radius: 5px;
   border: 1px solid rgba(255, 255, 255, 0.1803921569);
 }
 .productos .productos-cards .productos-card h2 {
   text-align: center;
   font-size: 2.5rem;
-  align-self: center;
 }
 .productos .productos-cards .productos-card:nth-of-type(odd) div:last-child {
   grid-area: 1/2/span 2;
-  align-self: center;
 }
 .productos .productos-cards .productos-card:nth-of-type(even) div:last-child {
   grid-area: 1/1/span 2;
-  align-self: center;
 }
 .productos .productos-cards .productos-card div h3 {
   text-decoration: underline;
@@ -424,14 +440,14 @@ footer {
   background-color: #4a0b6e;
 }
 footer .footer-grid {
+  padding: 0.8rem;
   display: grid;
   grid-template-columns: repeat(2, auto) 1fr auto;
-  padding: 0.8rem;
+  align-items: center;
   gap: 5.5vw;
 }
 footer .footer-grid .footer-redes {
   grid-column-start: 4;
-  align-self: center;
   display: flex;
   gap: 10px;
   padding-right: 1.3vw;
@@ -467,7 +483,9 @@ footer .footer-copyright {
     margin-right: 0.3vw;
   }
   header nav .nav-small div .hamburger-button:focus {
-    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.438);
+    box-shadow: 2px 2px 7px 0 rgba(0, 0, 0, 0.438);
+    -webkit-box-shadow: 2px 2px 7px 0 rgba(0, 0, 0, 0.438);
+    -moz-box-shadow: 2px 2px 7px 0 rgba(0, 0, 0, 0.438);
   }
   header nav .nav-small div .hamburger-button .hamburger-icon {
     background-image: url(../assets/iconos/hamburger-icon.svg);
@@ -483,6 +501,11 @@ footer .footer-copyright {
 }
 /* movil */
 @media screen and (max-width: 768px) {
+  /* general */
+  body main .separador {
+    max-width: 400px;
+    width: 80vw;
+  }
   /* header */
   header nav .nav-small div .logo a .img-logo-movil {
     display: block;
@@ -527,6 +550,7 @@ footer .footer-copyright {
   .compras .compras-columnas {
     display: grid;
     grid-template-columns: 100%;
+    align-items: center;
     gap: 30px;
   }
   .compras .compras-columnas img {
@@ -534,9 +558,6 @@ footer .footer-copyright {
     max-width: 80%;
     height: 60vw;
     border-radius: 50px;
-  }
-  .compras .compras-columnas .form {
-    max-width: 100%;
   }
   /* main nosotros */
   .nosotros section {

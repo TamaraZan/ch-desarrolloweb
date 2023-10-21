@@ -4,22 +4,15 @@
 /* main nosotros */
 .nosotros {
     @extend %fondo;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex (columna, center);
     padding-bottom: 5vw;
     section {
         h1 {
             padding-bottom: 2vw;
         }
-
         .conocenos {
             @include fondo-oscuro;
-            //repetido
-            display: grid;
-            grid-template-columns: 55fr 45fr;
-            align-items: center;
-            column-gap: 4vw;
+            @include grid-center (55fr 45fr, 0 4vw);
             div {
                 margin: 2.5vw 0 1.5vw 4vw;
             }
@@ -27,12 +20,12 @@
                 object-fit: cover;
             }
         }
+        .seg-titulo {
+            @include titulo(2rem);
+            padding-bottom: 2vw;
+        }
         .contacto {
-            //repetido
-            display: grid;
-            grid-template-columns: 50fr 50fr;
-            align-items: center;
-            column-gap: 8vw;
+            @include grid-center (50fr 50fr, 0 8vw);
             * {
                 max-width: 100%;
             }

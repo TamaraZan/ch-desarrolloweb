@@ -7,6 +7,15 @@
     background-color: $violeta;
 }
 
+@mixin titulo ($size) {
+    font-size: $size;
+    text-align: center;
+    font-weight: 700;
+    padding-top: 1.5vw;
+    padding-bottom: 0.8vw;
+    text-shadow: 1px 1px 3px $violeta-claro;
+}
+
 @mixin fondo-oscuro {
     background-color: #3d1a4fb9;
     color: $blanco;
@@ -15,17 +24,38 @@
 }
 
 
-@mixin glassmorphism {
+@mixin glassmorphism ($radius, $blur) {
     background: #9c72bd69;
     @include box-shadow(0, 8px, 32px, 0, #1f26875e);
-    backdrop-filter: blur( 9px );
-    -webkit-backdrop-filter: blur( 9px );
+    backdrop-filter: blur( $blur );
+    -webkit-backdrop-filter: blur( $blur );
+    border-radius: $radius;
     border: 1px solid #ffffff2e;
 }
 
-//simplificación de box-shadow, default de tamaño es 0
-@mixin box-shadow($x, $y, $blur, $tam, $color) {
-    box-shadow: $x $y $blur $tam $color;
-    -webkit-box-shadow: $x $y $blur $tam $color;
-    -moz-box-shadow: $x $y $blur $tam $color;
+//simplificación de box-shadow, default de $size es 0
+@mixin box-shadow($x, $y, $blur, $size, $color) {
+    box-shadow: $x $y $blur $size $color;
+    -webkit-box-shadow: $x $y $blur $size $color;
+    -moz-box-shadow: $x $y $blur $size $color;
+}
+
+//layout
+@mixin flex ($direccion, $center) {
+    display: flex;
+    @if $direccion == columna {
+        flex-direction: column;
+    } @else if $direccion == fila {
+        flex-direction: row;
+    }
+    @if $center == center {
+        justify-content: center;
+        align-items: center;
+    }
+}
+@mixin grid-center ($columns, $gap) {
+    display: grid;
+    grid-template-columns: $columns;
+    align-items: center;
+    gap: $gap;
 }

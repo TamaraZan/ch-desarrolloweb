@@ -40,7 +40,7 @@
                         border: 2px solid #c9c0ce91;
                         margin-right: 0.3vw;
                         &:focus {
-                            box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.438);
+                            @include box-shadow(2px, 2px, 7px, 0, rgba(0, 0, 0, 0.438));
                         }
                         .hamburger-icon {
                             background-image: url(../assets/iconos/hamburger-icon.svg);
@@ -66,12 +66,15 @@
 
 /* movil */ 
 @media screen and (max-width: 768px) {
-
-    // .separador {
-    //   max-width: 400px;
-    //   width: 80vw;
-    // }
-
+    /* general */
+    body {
+        main {
+            .separador {
+                max-width: 400px;
+                width: 80vw;
+            }
+        }
+    }
     /* header */
     header {
         nav {
@@ -129,17 +132,6 @@
             }
         }
     }
-    // .inicio-reviews {
-    //     .row {
-    //         .card-size {
-    //             .card {
-    //                 .card-header {
-    //                     height: auto;
-    //                 }
-    //             }
-    //         }
-    //     }
-    // }
     /* main compras */
     .compras {
         div {
@@ -148,18 +140,13 @@
             }
         }
         .compras-columnas {
-            display: grid;
-            grid-template-columns: 100%;
-            gap: 30px;
+            @include grid-center(100%, 30px);
             img {
                 grid-row: 1;
                 max-width: 80%;
                 height: 60vw;
                 border-radius: 50px;
             } 
-            .form {
-                max-width: 100%;
-            }
         }
     }
     /* main nosotros */
@@ -167,14 +154,12 @@
         section {
             max-width: 100%;
             .conocenos {
-                //repetido
                 grid-template-columns: 1fr;
                 div {
                     margin: 4vw 5.5vw 0 5.5vw;
                 }
             }
             .contacto {
-                //repetido
                 grid-template-columns: 100%;
                 div {
                     padding-bottom: 10px;
