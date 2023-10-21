@@ -1,0 +1,39 @@
+// hecho (tentativo)(limpiar)
+
+
+
+/* formularios */
+.form {
+    max-width: 400px;
+    padding: 3%;
+    border-radius: 5px 25px;
+    @include glassmorphism;
+    form div {
+        display: flex;
+        flex-direction: column;
+        width: 97%;
+        label {
+            margin: 0px 5px;
+        }
+        *:not(label) {
+            padding: 5px;
+            margin: 5px 5px;
+            border-radius: 7.5px;
+            background-color: $blanco;
+            &:not(label):focus {
+                outline: $violeta-claro solid 2px;
+                box-shadow: 0 0 10px $violeta-claro;
+            }
+        }
+        textarea {
+            height: 100px;
+        }
+        .input-imagenes {
+            font-size: 0.8em; 
+            &::file-selector-button {
+                background-color: $lila;//#bea1ce;
+                font-size: initial;
+            }
+        }
+    }
+}

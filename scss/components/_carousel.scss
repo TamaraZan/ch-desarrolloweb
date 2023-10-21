@@ -1,0 +1,20 @@
+// hecho (tentativo)(limpiar)
+
+/* carousel */
+.carousel {
+    .botones-carousel [data-bs-target] {
+        background-color: $violeta;
+        border: solid #c9c0ceaf 2.5px;
+        margin-bottom: 6px;
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+    }
+    .carousel-anterior > :first-child {
+        background-image: url(../assets/iconos/arrow-left.svg);
+    }
+    .carousel-siguiente > :first-child {
+        background-image: url(../assets/iconos/arrow-right.svg);
+    }
+}
+

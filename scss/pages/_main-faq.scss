@@ -1,0 +1,59 @@
+// hecho (tentativo)
+
+
+
+/* main FAQ */
+.faq {
+    @extend %fondo;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    div {
+        details:not(:first-child) {
+            border-top: solid 1px #693c80;
+        }
+        :first-child {
+            summary {
+                border-radius: 10px 10px 0px 0px;
+            }
+        }
+        :last-child {
+            summary {
+                border-radius: 0px 0px 10px 10px;
+            }
+            &[open] {
+                summary {
+                    border-radius: 0px;
+                }
+            }
+        }
+        details {
+            summary {
+                padding: 15px 2.5vw;
+                background-color: $violeta;
+                box-shadow: 3px 3px 4px #00000080;
+                cursor: pointer;
+                color: $blanco;
+                text-shadow: 0px 0px 5px #9172a34f;
+            }
+            &[open] {
+                summary {
+                    background-color: $violeta-claro;
+                }
+            }
+            div {
+                border-radius: 0 0 10px 10px;
+                background-color: $lila;
+                padding: 0.5vw 0;
+                margin-bottom: 4px;
+                box-shadow: 3px 3px 4px #00000080;
+                p {
+                    padding: 0.3vw 1.5vw;
+                    margin: 0;
+                    text-shadow: none;
+                }
+            }
+        }
+    }
+}
+  

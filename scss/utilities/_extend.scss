@@ -1,0 +1,16 @@
+
+
+//extend?
+// .compras, .faq, .nosotros, .productos 
+%fondo {
+    padding: 1.2vw 4vw;
+    background-color: #9c72bd69;
+    backdrop-filter: blur(1.8px);
+    -webkit-backdrop-filter: blur(1.8px);
+}
+// main img:not(.separador), footer img 
+%img {
+    border-radius: $img-radius;
+    @include box-shadow(10px, 10px, 12px, -2px, #000000a6);
+}
+    

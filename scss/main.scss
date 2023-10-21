@@ -1,0 +1,27 @@
+//TEMP: list, map, condicional, loop
+
+@import "utilities/variables";
+@import "utilities/mixins";
+@import "utilities/extend";
+
+@import "utilities/general";
+
+@import "components/form";
+@import "components/carousel";
+
+
+
+
+@import "components/header";
+
+@import "pages/main-index";
+@import "pages/main-compras";
+@import "pages/main-faq";
+@import "pages/main-nosotros";
+@import "pages/main-productos";
+
+@import "components/footer";
+
+@import "utilities/media-queries";
+
+// sass --watch scss/main.scss css/style-scss.css

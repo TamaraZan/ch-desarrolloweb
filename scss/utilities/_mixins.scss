@@ -1,0 +1,31 @@
+
+
+
+// en comun header y footer 
+@mixin colores-header-footer { //sacar la clase de TODOS los html T.T
+    color: $blanco;
+    background-color: $violeta;
+}
+
+@mixin fondo-oscuro {
+    background-color: #3d1a4fb9;
+    color: $blanco;
+    text-shadow: none;
+    border-radius: $img-radius;
+}
+
+
+@mixin glassmorphism {
+    background: #9c72bd69;
+    @include box-shadow(0, 8px, 32px, 0, #1f26875e);
+    backdrop-filter: blur( 9px );
+    -webkit-backdrop-filter: blur( 9px );
+    border: 1px solid #ffffff2e;
+}
+
+//simplificación de box-shadow, default de tamaño es 0
+@mixin box-shadow($x, $y, $blur, $tam, $color) {
+    box-shadow: $x $y $blur $tam $color;
+    -webkit-box-shadow: $x $y $blur $tam $color;
+    -moz-box-shadow: $x $y $blur $tam $color;
+}

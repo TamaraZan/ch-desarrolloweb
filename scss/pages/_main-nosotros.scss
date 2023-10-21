@@ -1,0 +1,56 @@
+// hecho (tentativo)(limpiar)
+
+
+/* main nosotros */
+.nosotros {
+    @extend %fondo;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5vw;
+    section {
+        h1 {
+            padding-bottom: 2vw;
+        }
+
+        .conocenos {
+            @include fondo-oscuro;
+            //repetido
+            display: grid;
+            grid-template-columns: 55fr 45fr;
+            align-items: center;
+            column-gap: 4vw;
+            div {
+                margin: 2.5vw 0 1.5vw 4vw;
+            }
+            img {
+                object-fit: cover;
+            }
+        }
+        .contacto {
+            //repetido
+            display: grid;
+            grid-template-columns: 50fr 50fr;
+            align-items: center;
+            column-gap: 8vw;
+            * {
+                max-width: 100%;
+            }
+            .contacto-mapa {
+                grid-row: 2;
+                padding-top: 2vw;
+            }
+            .contacto-form {
+                grid-row: span 2;
+            }
+        }
+    }
+}
+
+
+
+
+  
+
+
+

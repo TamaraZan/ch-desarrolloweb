@@ -1,0 +1,48 @@
+// hecho (tentativo)
+
+
+
+/* main compras */
+.compras {
+    @extend %fondo;
+    display: flex;
+    flex-direction: column;
+    div {
+        .compras-texto {
+            padding: 0 4vw;
+            font-size: 1.3em;
+            text-align: center;
+        }
+    }
+    .compras-columnas {
+        padding: 3% 0;
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        gap: 2%;
+        align-items: center;
+        justify-items: center;
+        img {
+            width: 100%;
+            // height: 100%;
+            border-radius: 60px;
+            max-width: 440px;
+            object-fit: cover;
+        }
+        .form {
+            // width: 80%;
+            form {
+                div {
+                    input {
+                        width: 100%;
+                    }
+                    textarea {
+                        width: 100%;
+                    }
+                    select {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -6,7 +6,8 @@
     <!-- link a bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- link a la hoja de estilos -->
-    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.css"> -->
+    <link rel="stylesheet" href="../css/style-scss.css">
     <!-- link a la fuente de letra -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,18 +20,21 @@
     <header class="colores-header-footer ">
         <nav>
             <section class="nav-large">
-                <div class="logo">
-                    <a href="../index.html"><img src="../assets/logo/pc.jpg" alt="logo de Meow sublimaciones"></a>
+                <div>
+                    <div class="logo">
+                        <a href="../index.html"><img src="../assets/logo/pc.jpg" alt="logo de Meow sublimaciones"></a>
+                    </div>
+                    <div>
+                        <ul class="menu">
+                            <li><a href="../index.html"><button> Inicio </button></a></li>
+                            <li><a href="./productos.html"><button> Productos </button></a></li>
+                            <li><a href="./compras.html"><button> Comprar </button></a></li>
+                            <li><a href="./nosotros.html"><button> Nosotros </button></a></li>
+                            <li><a href="./faq.html"><button> Preguntas </button></a></li>
+                        </ul>
+                    </div>
                 </div>
-                <ul>
-                    <li><a href="../index.html"><button> Inicio </button></a></li>
-                    <li><a href="./productos.html"><button> Productos </button></a></li>
-                    <li><a href="./compras.html"><button> Comprar </button></a></li>
-                    <li><a href="./nosotros.html"><button> Nosotros </button></a></li>
-                    <li><a href="./faq.html"><button> Preguntas </button></a></li>
-                </ul>
             </section>
-    
             <section class="navbar nav-small">
                 <div class="container-fluid">
                     <div class="logo">
@@ -62,7 +66,7 @@
         <div class="nosotros">
             <section>
                 <h1>Conocenos</h1>
-                <div class="conocenos fondo-oscuro">
+                <div class="conocenos">
                     <div>
                         <p>Somos una marca de sublimaciones, con un enfoque en la calidad y el diseño. Nuestra misión es ofrecer productos de calidad a un precio accesible.</p>
                         <p>Nuestra marca fue fundada hace 5 años por un grupo de amigos apasionados por el diseño. La idea surgió cuando vimos la mala calidad de alunos de los productos sublimados. Empezamos haciendo tazas sublimadas para nuestros amigos y fuimos creciendo con el boca a boca. Con el tiempo fuimos aumentando nuestra clientela y nuestros productos, y en el futuro esperamos poder ampliar la variedad de productos aun más.</p>
@@ -79,16 +83,15 @@
                     <div>
                         <ul>
                             <li>Francisco Bilbao 2241</li>
-                            <li>meowsublimaciones@gmail.com</li>
+                            <li>meowsublim@gmail.com</li>
                             <li>Whatsapp: 15-1111-1111</li>
                         </ul>
                     </div>
 
                     <div class="contacto-mapa">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26262.60140837564!2d-58.47559706382511!3d-34.633857967916256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca294fd35163%3A0x4585f2128f079392!2sFrancisco%20Bilbao%202241%2C%20C1406FFS%20CABA!5e0!3m2!1ses!2sar!4v1696996597806!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d52549.624297090304!2d-58.37824000266105!3d-34.595271707815165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1694840845111!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
                     </div>
-                    
+
                     <div class="form contacto-form">
                         <h2>Dejanos tus comentarios:</h2>
                         <form action="">
@@ -124,23 +127,20 @@
                     <li>Whatsapp: 15-1111-1111</li>
                 </ul>
             </div>
-            <div>
+            <div class="footer-nav">
                 <ul>
                     <li><a href="./nosotros.html">Nosotros</a></li>
                     <li><a href="./faq.html">Preguntas Frecuentes</a></li>
                     <li><a href="./nosotros.html #contacto">Contactanos</a></li>
                 </ul>
             </div>
-    
             <div class="footer-redes">
                 <div class="footer-instagram"><a href="https://www.instagram.com/" target="_blank"><img src="../assets/iconos/instagram.png" alt="logo instagram"></a></div>
                 <div class="footer-facebook"><a href="https://es-la.facebook.com/" target="_blank"><img src="../assets/iconos/facebook.png" alt="logo facebook"></a></div>
                 <div class="footer-twitter"><a href="https://twitter.com/" target="_blank"><img src="../assets/iconos/twitter.png" alt="logo twitter"></a></div>
             </div>
         </section>
-    
         <hr/>
-    
         <section class="footer-copyright">
             <!-- COMPLETAR: copyright -->
             <ul>

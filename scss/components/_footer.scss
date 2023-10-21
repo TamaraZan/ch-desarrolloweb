@@ -1,0 +1,35 @@
+// hecho (tentativo)
+
+
+/* footer */
+footer {
+    @include colores-header-footer;
+    .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(2, auto) 1fr auto;
+        padding: 0.8rem;
+        gap: 5.5vw;
+        .footer-redes {
+            grid-column-start: 4;
+            align-self: center;
+            display: flex;
+            gap: 10px;
+            padding-right: 1.3vw;
+            padding-bottom: 0.9vh;
+            div {
+                a {
+                    img {
+                        border-radius: 15px;
+                    }
+                }
+            }
+        }
+    }
+    hr {
+        margin: 0;
+    }
+    .footer-copyright {
+        padding: 0.3rem;
+        font-size: 0.7em;
+    }
+}
