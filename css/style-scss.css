@@ -1,15 +1,8 @@
 .productos, .nosotros, .faq, .compras {
   padding: 1.2vw 4vw;
-  background-color: rgba(156, 114, 189, 0.4117647059);
+  background-color: rgba(169, 138, 193, 0.3);
   backdrop-filter: blur(1.8px);
   -webkit-backdrop-filter: blur(1.8px);
-}
-
-footer .footer-grid .footer-redes div a img, body main img {
-  border-radius: 5px;
-  box-shadow: 10px 10px 12px -2px rgba(0, 0, 0, 0.6509803922);
-  -webkit-box-shadow: 10px 10px 12px -2px rgba(0, 0, 0, 0.6509803922);
-  -moz-box-shadow: 10px 10px 12px -2px rgba(0, 0, 0, 0.6509803922);
 }
 
 /* reset */
@@ -38,7 +31,7 @@ body main {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  text-shadow: 0.1px 0.1px 5px #c9c0ce;
+  text-shadow: 0.1px 0.1px 4px #c9c0ce;
 }
 body main h1 {
   font-size: 2.5rem;
@@ -48,8 +41,11 @@ body main h1 {
   padding-bottom: 0.8vw;
   text-shadow: 1px 1px 3px #5b1f7e;
 }
-body main h2 {
-  font-size: 1.4rem;
+body main img {
+  border-radius: 5px;
+  box-shadow: 10px 10px 12px -2px rgba(0, 0, 0, 0.6509803922);
+  -webkit-box-shadow: 10px 10px 12px -2px rgba(0, 0, 0, 0.6509803922);
+  -moz-box-shadow: 10px 10px 12px -2px rgba(0, 0, 0, 0.6509803922);
 }
 body main iframe {
   border-radius: 5px;
@@ -58,7 +54,7 @@ body main .link {
   text-shadow: 0px 0px 5px #4a0b6e;
 }
 body main .separador {
-  width: 40vw;
+  width: calc(200px + 25vw);
   padding-top: 4vh;
   padding-bottom: 1vh;
   box-shadow: none;
@@ -68,7 +64,7 @@ body main .separador {
 .form {
   max-width: 400px;
   padding: 3%;
-  background: rgba(156, 114, 189, 0.4117647059);
+  background: rgba(169, 138, 193, 0.4);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.368627451);
   -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.368627451);
   -moz-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.368627451);
@@ -76,6 +72,9 @@ body main .separador {
   -webkit-backdrop-filter: blur(9px);
   border-radius: 5px 25px;
   border: 1px solid rgba(255, 255, 255, 0.1803921569);
+}
+.form .form-titulo {
+  font-size: 1.4rem;
 }
 .form form div {
   display: flex;
@@ -88,14 +87,15 @@ body main .separador {
 .form form div *:not(label) {
   padding: 5px;
   margin: 5px 5px;
+  width: 100%;
   border-radius: 7.5px;
   background-color: #c9c0ce;
 }
 .form form div *:not(label):not(label):focus {
   outline: #5b1f7e solid 2px;
-  box-shadow: 0 0 10px 0 #5b1f7e;
-  -webkit-box-shadow: 0 0 10px 0 #5b1f7e;
-  -moz-box-shadow: 0 0 10px 0 #5b1f7e;
+  box-shadow: 0 0 10px #5b1f7e;
+  -webkit-box-shadow: 0 0 10px #5b1f7e;
+  -moz-box-shadow: 0 0 10px #5b1f7e;
 }
 .form form div textarea {
   height: 100px;
@@ -111,7 +111,7 @@ body main .separador {
 /* carousel */
 .carousel .botones-carousel [data-bs-target] {
   background-color: #4a0b6e;
-  border: solid rgba(201, 192, 206, 0.6862745098) 2.5px;
+  border: solid 2.5px rgba(201, 192, 206, 0.7);
   margin-bottom: 6px;
   width: 10px;
   height: 10px;
@@ -148,7 +148,6 @@ header nav section div div ul {
 }
 header nav section div div ul li {
   width: 100%;
-  height: 100%;
   text-align: center;
   padding: 1rem 0rem;
 }
@@ -183,7 +182,7 @@ header nav .nav-small {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  background: rgba(156, 114, 189, 0.4117647059);
+  background: rgba(169, 138, 193, 0.4);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.368627451);
   -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.368627451);
   -moz-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.368627451);
@@ -193,11 +192,14 @@ header nav .nav-small {
   border: 1px solid rgba(255, 255, 255, 0.1803921569);
   /* carousel */
 }
+.inicio-productos h2 {
+  font-size: 1.4rem;
+}
 .inicio-productos #carousel-inicio-sm {
   display: none;
 }
 .inicio-productos .carousel {
-  background-color: rgba(61, 26, 79, 0.7254901961);
+  background-color: rgba(74, 11, 110, 0.8);
   color: #c9c0ce;
   text-shadow: none;
   border-radius: 5px;
@@ -235,7 +237,8 @@ header nav .nav-small {
   padding-top: 2%;
 }
 .inicio-reviews .row .card-size .card {
-  background: rgba(156, 114, 189, 0.4117647059);
+  color: black;
+  background: rgba(169, 138, 193, 0.4);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.368627451);
   -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.368627451);
   -moz-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.368627451);
@@ -272,12 +275,10 @@ header nav .nav-small {
 }
 .compras .compras-columnas img {
   width: 100%;
+  height: 100%;
   border-radius: 60px;
   max-width: 440px;
   object-fit: cover;
-}
-.compras .compras-columnas .form form div input, .compras .compras-columnas .form form div textarea, .compras .compras-columnas .form form div select {
-  width: 100%;
 }
 
 /* main FAQ */
@@ -287,7 +288,7 @@ header nav .nav-small {
   gap: 2vw;
 }
 .faq div details:not(:first-child) {
-  border-top: solid 1px #693c80;
+  border-top: solid 1px #5b1f7e;
 }
 .faq div :first-child summary {
   border-radius: 10px 10px 0px 0px;
@@ -302,9 +303,9 @@ header nav .nav-small {
   padding: 15px 2.5vw;
   background-color: #4a0b6e;
   color: #c9c0ce;
-  box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.5019607843);
-  -webkit-box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.5019607843);
-  -moz-box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.5019607843);
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5019607843);
+  -webkit-box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5019607843);
+  -moz-box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5019607843);
   cursor: pointer;
   text-shadow: none;
 }
@@ -316,9 +317,9 @@ header nav .nav-small {
   background-color: #a98ac1;
   padding: 0.5vw 0;
   margin-bottom: 4px;
-  box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.5019607843);
-  -webkit-box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.5019607843);
-  -moz-box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.5019607843);
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5019607843);
+  -webkit-box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5019607843);
+  -moz-box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5019607843);
 }
 .faq div details div p {
   padding: 0.3vw 1.5vw;
@@ -338,7 +339,7 @@ header nav .nav-small {
   padding-bottom: 2vw;
 }
 .nosotros section .conocenos {
-  background-color: rgba(61, 26, 79, 0.7254901961);
+  background-color: rgba(74, 11, 110, 0.8);
   color: #c9c0ce;
   text-shadow: none;
   border-radius: 5px;
@@ -353,7 +354,7 @@ header nav .nav-small {
 .nosotros section .conocenos img {
   object-fit: cover;
 }
-.nosotros section .seg-titulo {
+.nosotros section h2 {
   font-size: 2rem;
   text-align: center;
   font-weight: 700;
@@ -368,12 +369,12 @@ header nav .nav-small {
   align-items: center;
   gap: 0 8vw;
 }
-.nosotros section .contacto * {
-  max-width: 100%;
-}
 .nosotros section .contacto .contacto-mapa {
   grid-row: 2;
   padding-top: 2vw;
+}
+.nosotros section .contacto .contacto-mapa iframe {
+  width: 100%;
 }
 .nosotros section .contacto .contacto-form {
   grid-row: span 2;
@@ -389,7 +390,7 @@ header nav .nav-small {
   grid-template-columns: repeat(2, 48%);
   align-items: center;
   gap: 0 4%;
-  background: rgba(156, 114, 189, 0.4117647059);
+  background: rgba(169, 138, 193, 0.4);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.368627451);
   -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.368627451);
   -moz-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.368627451);
@@ -416,7 +417,7 @@ header nav .nav-small {
 .productos .productos-cards .productos-card div p {
   margin: 0;
 }
-.productos .productos-cards .productos-card div .carousel .carousel-main .carousel-item img {
+.productos .productos-cards .productos-card .carousel .carousel-main .carousel-item img {
   cursor: zoom-in;
 }
 
@@ -454,6 +455,10 @@ footer .footer-grid .footer-redes {
   padding-bottom: 0.9vh;
 }
 footer .footer-grid .footer-redes div a img {
+  border-radius: 5px;
+  box-shadow: 10px 10px 12px -2px rgba(0, 0, 0, 0.6509803922);
+  -webkit-box-shadow: 10px 10px 12px -2px rgba(0, 0, 0, 0.6509803922);
+  -moz-box-shadow: 10px 10px 12px -2px rgba(0, 0, 0, 0.6509803922);
   border-radius: 15px;
 }
 footer hr {
@@ -479,13 +484,13 @@ footer .footer-copyright {
     display: none;
   }
   header nav .nav-small div .hamburger-button {
-    border: 2px solid rgba(201, 192, 206, 0.568627451);
+    border: 2px solid rgba(201, 192, 206, 0.6);
     margin-right: 0.3vw;
   }
   header nav .nav-small div .hamburger-button:focus {
-    box-shadow: 2px 2px 7px 0 rgba(0, 0, 0, 0.438);
-    -webkit-box-shadow: 2px 2px 7px 0 rgba(0, 0, 0, 0.438);
-    -moz-box-shadow: 2px 2px 7px 0 rgba(0, 0, 0, 0.438);
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.6509803922);
+    -webkit-box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.6509803922);
+    -moz-box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.6509803922);
   }
   header nav .nav-small div .hamburger-button .hamburger-icon {
     background-image: url(../assets/iconos/hamburger-icon.svg);
@@ -503,8 +508,7 @@ footer .footer-copyright {
 @media screen and (max-width: 768px) {
   /* general */
   body main .separador {
-    max-width: 400px;
-    width: 80vw;
+    max-width: 95%;
   }
   /* header */
   header nav .nav-small div .logo a .img-logo-movil {
@@ -512,17 +516,6 @@ footer .footer-copyright {
   }
   header nav .nav-small div .logo a .img-logo-tablet {
     display: none;
-  }
-  /* footer */
-  footer .footer-grid {
-    display: flex;
-    flex-wrap: wrap-reverse;
-    justify-content: space-evenly;
-    gap: 20px;
-  }
-  footer .footer-grid .footer-redes {
-    width: 100%;
-    justify-content: center;
   }
   /* main inicio */
   .inicio-intro {
@@ -555,14 +548,11 @@ footer .footer-copyright {
   }
   .compras .compras-columnas img {
     grid-row: 1;
-    max-width: 80%;
-    height: 60vw;
+    max-width: calc(200px + 40%);
+    height: calc(100px + 40vw);
     border-radius: 50px;
   }
   /* main nosotros */
-  .nosotros section {
-    max-width: 100%;
-  }
   .nosotros section .conocenos {
     grid-template-columns: 1fr;
   }
@@ -586,15 +576,18 @@ footer .footer-copyright {
   .productos .productos-cards .productos-card:nth-of-type(even) div:last-child {
     grid-area: 3/1/span 1;
   }
+  /* footer */
+  footer .footer-grid {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
 }
 @media screen and (max-width: 436px) {
   /* footer */
   footer .footer-grid .footer-nav {
     margin-right: 25px;
-  }
-  /* main compras */
-  .compras .compras-columnas img {
-    max-width: 90%;
   }
 }
 

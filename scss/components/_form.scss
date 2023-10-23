@@ -1,12 +1,11 @@
-// hecho (tentativo)(limpiar)
-
-
-
 /* formularios */
 .form {
     max-width: 400px;
     padding: 3%;
     @include glassmorphism($radius 25px, $glass-blur);
+    .form-titulo {
+        @include titulo-componente;
+    }
     form div {
         @include flex (columna, n/a);
         width: 97%;
@@ -16,11 +15,12 @@
         *:not(label) {
             padding: 5px;
             margin: 5px 5px;
+            width: 100%;
             border-radius: 7.5px;
             background-color: $blanco;
             &:not(label):focus {
                 outline: $violeta-claro solid 2px;
-                @include box-shadow(0, 0, 10px, 0, $violeta-claro);
+                @include box-shadow(0 0 10px $violeta-claro);
             }
         }
         textarea {
@@ -29,7 +29,7 @@
         .input-imagenes {
             font-size: 0.8em; 
             &::file-selector-button {
-                background-color: $lila;//#bea1ce;
+                background-color: $lila;
                 font-size: initial;
             }
         }

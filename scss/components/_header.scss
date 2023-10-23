@@ -1,8 +1,3 @@
-// hecho (tentativo)(limpiar)
-
-
-
-
 /* header */
 header {
     @include colores-header-footer;
@@ -11,10 +6,10 @@ header {
             div {
                 .logo {
                     @include flex (n/a, center);
-                    height: 100px;//reducir la imagen a 100px de alto?
+                    height: 100px;
                     a {
                         height: 100%;
-                        img{
+                        img {
                             height: 100%;
                         }
                     }
@@ -26,7 +21,6 @@ header {
                         border-top: solid $violeta-claro 2px;
                         li {
                             width: 100%;
-                            height: 100%;
                             text-align: center;
                             padding: 1rem 0rem;
                             &:hover {

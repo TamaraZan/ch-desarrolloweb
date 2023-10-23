@@ -1,7 +1,3 @@
-// hecho (tentativo)
-
-
-
 /* main compras */
 .compras {
     @extend %fondo;
@@ -19,20 +15,10 @@
         justify-items: center;
         img {
             width: 100%;
-            // height: 100%;
+            height: 100%;
             border-radius: 60px;
             max-width: 440px;
             object-fit: cover;
-        }
-        .form {
-            // width: 80%;
-            form {
-                div {
-                    input, textarea, select {
-                        width: 100%;
-                    }
-                }
-            }
         }
     }
 }

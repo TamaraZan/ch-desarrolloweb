@@ -1,7 +1,3 @@
-// hecho (tentativo)
-
-
-
 /* main FAQ */
 .faq {
     @extend %fondo;
@@ -9,7 +5,7 @@
     gap: 2vw;
     div {
         details:not(:first-child) {
-            border-top: solid 1px #693c80;
+            border-top: solid 1px $violeta-claro;
         }
         :first-child {
             summary {
@@ -31,7 +27,7 @@
                 padding: 15px 2.5vw;
                 background-color: $violeta;
                 color: $blanco;
-                @include box-shadow(3px, 3px, 4px, 0, #00000080);
+                @include box-shadow($faq-accord-shadow);
                 cursor: pointer;
                 text-shadow: none;
             }
@@ -45,7 +41,7 @@
                 background-color: $lila;
                 padding: 0.5vw 0;
                 margin-bottom: 4px;
-                @include box-shadow(3px, 3px, 4px, 0, #00000080);
+                @include box-shadow($faq-accord-shadow);
                 p {
                     padding: 0.3vw 1.5vw;
                     margin: 0;

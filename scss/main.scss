@@ -1,27 +1,27 @@
-//TEMP: list, map, condicional, loop
-
 @import "utilities/variables";
-@import "utilities/mixins";
-@import "utilities/extend";
+@import "utilities/mixins";     //COMPLETAR: reevaluar el color de fondo-oscuro
+@import "utilities/extend";     //COMPLETAR: ver si modifico %fondo con gradientes/otros para que se lea mejor el texto
 
+//estilos generales para todas las páginas
 @import "utilities/general";
-
+//estilos de componentes reutilizables
 @import "components/form";
 @import "components/carousel";
 
-
-
-
-@import "components/header";
-
+//header
+@import "components/header";    //COMPLETAR: chequear como queda el nuevo logo movil
+//main de las paginas
 @import "pages/main-index";
 @import "pages/main-compras";
 @import "pages/main-faq";
 @import "pages/main-nosotros";
 @import "pages/main-productos";
-
+//footer
 @import "components/footer";
 
-@import "utilities/media-queries";
+//media queries
+@import "utilities/media-queries"; 
 
-// sass --watch scss/main.scss css/style-scss.css
+
+
+// BORRAR! sass --watch scss/main.scss css/style-scss.css

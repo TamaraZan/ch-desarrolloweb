@@ -1,7 +1,3 @@
-// hecho (tentativo)(limpiar)
-
-
-
 /* main productos */
 .productos {
     @extend %fondo;
@@ -36,25 +32,19 @@
                 p {
                     margin: 0;
                 }
-                .carousel {
-                    .carousel-main {
-                        .carousel-item {
-                            img {
-                                cursor: zoom-in;
-                            }
+            }
+            .carousel {
+                .carousel-main {
+                    .carousel-item {
+                        img {
+                            cursor: zoom-in;
                         }
                     }
                 }
             }
         }
-
     }
 }
-// .modals {
-//     div {
-//         .modal {
-//             div {
-//                 .modal-content {
 .modal-body {
     padding: 0;
     button {
@@ -68,13 +58,3 @@
         }
     }
 }
-//                 }
-//             }
-//         }
-//     }
-// }
-
-
-
-
-  

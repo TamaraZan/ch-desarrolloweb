@@ -1,12 +1,10 @@
-
-
-
 // en comun header y footer 
-@mixin colores-header-footer { //sacar la clase de TODOS los html T.T
+@mixin colores-header-footer {
     color: $blanco;
     background-color: $violeta;
 }
 
+//titulos
 @mixin titulo ($size) {
     font-size: $size;
     text-align: center;
@@ -15,29 +13,33 @@
     padding-bottom: 0.8vw;
     text-shadow: 1px 1px 3px $violeta-claro;
 }
+@mixin titulo-componente {
+    font-size: 1.4rem;
+}
 
+@mixin img {
+    border-radius: $radius;
+    @include box-shadow(10px 10px 12px -2px #000000a6);
+}
+//simplificación de box-shadow
+@mixin box-shadow($valor) { 
+    box-shadow: $valor;
+    -webkit-box-shadow: $valor;
+    -moz-box-shadow: $valor;
+}
 @mixin fondo-oscuro {
-    background-color: #3d1a4fb9;
+    background-color: transparentize($violeta, 0.2); // color viejo: #3d1a4fb9;
     color: $blanco;
     text-shadow: none;
-    border-radius: $img-radius;
+    border-radius: $radius;
 }
-
-
-@mixin glassmorphism ($radius, $blur) {
-    background: #9c72bd69;
-    @include box-shadow(0, 8px, 32px, 0, #1f26875e);
+@mixin glassmorphism ($border-radius, $blur) {
+    background: transparentize($lila, 0.6);
+    @include box-shadow(0 8px 32px 0 #1f26875e);
     backdrop-filter: blur( $blur );
     -webkit-backdrop-filter: blur( $blur );
-    border-radius: $radius;
+    border-radius: $border-radius;
     border: 1px solid #ffffff2e;
-}
-
-//simplificación de box-shadow, default de $size es 0
-@mixin box-shadow($x, $y, $blur, $size, $color) {
-    box-shadow: $x $y $blur $size $color;
-    -webkit-box-shadow: $x $y $blur $size $color;
-    -moz-box-shadow: $x $y $blur $size $color;
 }
 
 //layout

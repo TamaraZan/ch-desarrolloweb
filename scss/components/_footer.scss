@@ -1,6 +1,3 @@
-// hecho (tentativo)
-
-
 /* footer */
 footer {
     @include colores-header-footer;
@@ -16,7 +13,7 @@ footer {
             div {
                 a {
                     img {
-                        @extend %img;
+                        @include img;
                         border-radius: 15px;
                     }
                 }

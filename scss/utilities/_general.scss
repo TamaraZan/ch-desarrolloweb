@@ -1,8 +1,3 @@
-//a lo bruto, no sigue encapsulamiento exactamente
-
-
-
-
 /* reset */
 * {
     margin: 0;
@@ -13,7 +8,7 @@
 /* estilos generales */
 body {
     font-family: 'BioRhyme', sans-serif;
-    color: black;
+    color: $negro;
     a {
         color: $blanco;
     }
@@ -28,24 +23,21 @@ body {
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment:fixed;
-        text-shadow: 0.1px 0.1px 5px $blanco;
+        text-shadow: 0.1px 0.1px 4px $blanco;
         h1 {
             @include titulo(2.5rem);
         }
-        h2 {
-            font-size: 1.4rem;
-        }
         img {
-            @extend %img;
+            @include img;
         }
         iframe {
-            border-radius: $img-radius;
+            border-radius: $radius;
         }
         .link {
             text-shadow: 0px 0px 5px $violeta;
         }
         .separador {
-            width: 40vw;
+            width: calc(200px + 25vw);
             padding-top: 4vh;
             padding-bottom: 1vh;
             box-shadow: none;
