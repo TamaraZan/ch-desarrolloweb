@@ -1,7 +1,10 @@
 /* main inicio */ 
 .inicio-intro {
-    padding: 8vw 15vw;
+    padding: 6vw 15vw;
     text-align: center;
+    h1 {
+        padding-bottom: 30px;
+    }
     p {
         font-size:1.7rem;
         text-shadow: 2px 2px 7px $blanco;

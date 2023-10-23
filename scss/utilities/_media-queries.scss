@@ -78,6 +78,9 @@
     /* main inicio */
     .inicio-intro {
         padding: 9vw;
+        h1 {
+            font-size: calc(2rem + 0.8vw);
+        }
         p {
             font-size: calc(1.3rem + .6vw);
         }

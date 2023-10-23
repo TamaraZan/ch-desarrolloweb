@@ -170,8 +170,11 @@ header nav .nav-small {
 
 /* main inicio */
 .inicio-intro {
-  padding: 8vw 15vw;
+  padding: 6vw 15vw;
   text-align: center;
+}
+.inicio-intro h1 {
+  padding-bottom: 30px;
 }
 .inicio-intro p {
   font-size: 1.7rem;
@@ -520,6 +523,9 @@ footer .footer-copyright {
   /* main inicio */
   .inicio-intro {
     padding: 9vw;
+  }
+  .inicio-intro h1 {
+    font-size: calc(2rem + 0.8vw);
   }
   .inicio-intro p {
     font-size: calc(1.3rem + 0.6vw);
