@@ -7,6 +7,12 @@
 }
 //originalmente dentro de ".productos productos-cards"
 //puesto aparte para que el codigo sea más fácil de leer
+.productos-intro {
+    margin: 0 5vw;
+    p {
+        text-align: center;
+    }
+}
 .productos-card {
     margin: 0 5vw 30px 5vw;
     @include grid-center (repeat(2, 48%), 0 4%);

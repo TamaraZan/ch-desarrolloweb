@@ -58,7 +58,7 @@
         }
     }
     /* header */
-    .nav-small div {
+    header nav .nav-small div {
         .logo a {
             .img-logo-movil {
                 display: block;
@@ -142,7 +142,7 @@
         }
     }
     /* footer */
-    .footer-grid {
+    footer .footer-grid {
         display: flex;
         flex-wrap: wrap-reverse;
         justify-content: space-evenly;
@@ -162,11 +162,7 @@
         }
     }
     /* footer */
-    footer {
-        .footer-grid {
-            .footer-nav {
-                margin-right: 25px;
-            }
-        }
+    footer .footer-grid .footer-nav {
+        margin-right: 25px;
     }
 }
