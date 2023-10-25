@@ -14,6 +14,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- link a Animate On Scroll Library (https://michalsnik.github.io/aos/) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- favicon -->
     <link rel="icon" type="image/png"  href="../assets/logo/favicon.png">
      
@@ -72,9 +74,9 @@
             <h1>Productos</h1>
             <p>Conocé los productos que ofrecemos e inspirate viendo algunos de los productos que hicimos anteriormente.</p>
             <div class="productos-cards">
-                <div class="productos-card">
+                <div class="productos-card" data-aos="fade-left" data-aos-duration="1500">
                     <h2>Tazas</h2>
-                    <div>
+                    <div class="productos-descripcion">
                         <!-- Área para sublimar: 20cm circunferencia x 9,5cm altura -->
                         <p>Taza cilíndrica de cerámica fabricada con equipo de pulverización automático para garantizar que el recubrimiento sea uniforme, grueso y más resistente al desgaste, de modo que la imagen transferido en la taza sea más claro.</p>
                         <h3>Medidas:</h3>
@@ -123,9 +125,9 @@
                         </button>
                     </div>
                 </div>
-                <div class="productos-card">
+                <div class="productos-card" data-aos="fade-right" data-aos-duration="1500">
                     <h2>Jarros Térmicos</h2>
-                    <div>
+                    <div class="productos-descripcion">
                         <!-- Área para sublimación: 25cm circunferencia x 10cm altura -->
                         <p>Superficie brillante, colores nítidos y calidad fotográfica. Material de alta resistencia a los golpes y el maltrato. Las imágenes resisten las rayaduras y el lavaplatos ya que el pigmento de sublimación se fija químicamente.</p>
                         <h3>Medidas:</h3>
@@ -174,9 +176,9 @@
                         </button>
                     </div>
                 </div>
-                <div class="productos-card">
+                <div class="productos-card" data-aos="fade-left" data-aos-duration="1500">
                     <h2>Delantales</h2>
-                    <div>
+                    <div class="productos-descripcion">
                         <p>Delantal largo de tela 100% poliéster. Aprovecha al máximo el área sublimable y plasma tus ideas sin límites.</p>
                         <h3>Medidas:</h3>
                         <p>Altura: 90cm</p>
@@ -224,9 +226,9 @@
                         </button>
                     </div>
                 </div>
-                <div class="productos-card">
+                <div class="productos-card" data-aos="fade-right" data-aos-duration="1500">
                     <h2>Mousepads</h2>
-                    <div>
+                    <div class="productos-descripcion">
                         <p>El material es una combinación de goma espuma de alta densidad, una capa de goma antideslizante y tela sintética en la superficie, lo que le da una textura suave pero no resbalosa al pad.</p>
                         <h3>Medidas:</h3>
                         <p>Altura: 21cm</p>
@@ -557,5 +559,10 @@
 
     <!-- link de bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- link de Animate On Scroll Library (https://michalsnik.github.io/aos/) -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

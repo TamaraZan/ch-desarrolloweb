@@ -1,6 +1,7 @@
 @import "utilities/variables";
-@import "utilities/mixins";     //COMPLETAR: reevaluar el color de fondo-oscuro
+@import "utilities/mixins";
 @import "utilities/extend";     //COMPLETAR: ver si modifico %fondo con gradientes/otros para que se lea mejor el texto
+@import "utilities/animations";
 
 //estilos generales para todas las páginas
 @import "utilities/general";
@@ -20,4 +21,4 @@
 @import "components/footer";
 
 //media queries
-@import "utilities/media-queries"; 
+@import "utilities/media-queries"; //COMPLETAR: elegir con qué modificacion de la animacion de las cards en productos me quedo

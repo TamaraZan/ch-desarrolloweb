@@ -14,6 +14,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@300;400;700&display=swap" rel="stylesheet" />
+    <!-- link a Animate On Scroll Library (https://michalsnik.github.io/aos/) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- favicon -->
     <link rel="icon" type="image/png"  href="assets/logo/favicon.png">
 
@@ -30,11 +32,11 @@
                     </div>
                     <div>
                         <ul class="menu">
-                            <li><a href="./index.html"><button> Inicio </button></a></li>
-                            <li><a href="./pages/productos.html"><button> Productos </button></a></li>
-                            <li><a href="./pages/compras.html"><button> Comprar </button></a></li>
-                            <li><a href="./pages/nosotros.html"><button> Nosotros </button></a></li>
-                            <li><a href="./pages/faq.html"><button> Preguntas </button></a></li>
+                            <li class="hvr-bounce-to-bottom"><a href="./index.html"><button> Inicio </button></a></li>
+                            <li class="hvr-bounce-to-bottom"><a href="./pages/productos.html"><button> Productos </button></a></li>
+                            <li class="hvr-bounce-to-bottom"><a href="./pages/compras.html"><button> Comprar </button></a></li>
+                            <li class="hvr-bounce-to-bottom"><a href="./pages/nosotros.html"><button> Nosotros </button></a></li>
+                            <li class="hvr-bounce-to-bottom"><a href="./pages/faq.html"><button> Preguntas </button></a></li>
                         </ul>
                     </div>
                 </div>
@@ -168,7 +170,7 @@
         <section class="inicio-reviews">
             <img src="./assets/separador.svg" alt="separador" class="separador">
             <div class="row">
-                <div class="col-lg-3 col-md-4 col-sm-8 card-size">
+                <div class="col-lg-3 col-md-4 col-sm-8 card-size" data-aos="fade-up" data-aos-duration="1500">
                     <div class="card text-center h-100">
                         <div class="card-header">
                             <h5 class="card-title">Realmente muy agradecida</h5>
@@ -178,7 +180,7 @@
                         </div>
                     </div>
                 </div>
-                <div class=" col-lg-3 col-md-4 col-sm-8 card-size">
+                <div class=" col-lg-3 col-md-4 col-sm-8 card-size" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
                     <div class="card text-center h-100">
                         <div>
                             <div class="card-header">
@@ -190,7 +192,7 @@
                         </div>
                     </div>
                 </div>
-                <div class=" col-lg-3 col-md-8 col-sm-8 card-size">
+                <div class=" col-lg-3 col-md-8 col-sm-8 card-size" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
                     <div class="card text-center h-100">
                         <div class="card-header">
                             <h5 class="card-title">Exelente trabajo y atención</h5>
@@ -240,6 +242,11 @@
 
     <!-- link de bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- link de Animate On Scroll Library (https://michalsnik.github.io/aos/) -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

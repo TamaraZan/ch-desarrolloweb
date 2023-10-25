@@ -14,13 +14,16 @@
         }
         *:not(label) {
             padding: 5px;
-            margin: 5px 5px;
+            margin: 5px;
             width: 100%;
             border-radius: 7.5px;
             background-color: $blanco;
-            &:not(label):focus {
-                outline: $violeta-claro solid 2px;
-                @include box-shadow(0 0 10px $violeta-claro);
+            border: $violeta-claro 2px solid;
+            transition: box-shadow 0.2s;
+            &:focus {
+                outline: none;
+                @include box-shadow(0 0 10px 2px $violeta-claro);
+                transition: box-shadow 0.25s;
             }
         }
         textarea {
@@ -31,6 +34,17 @@
             &::file-selector-button {
                 background-color: $lila;
                 font-size: initial;
+            }
+        }
+        input[type="submit"] {
+            width: 60%;
+            margin: 15px 0 5px 21%;
+            padding: 10px 0;
+            background-color: $violeta;
+            color: $blanco;
+            &:hover {
+                -webkit-animation: color-change-3x 4s linear infinite alternate both;
+                animation: color-change-3x 4s linear infinite alternate both;
             }
         }
     }

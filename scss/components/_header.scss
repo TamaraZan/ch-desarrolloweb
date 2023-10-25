@@ -23,9 +23,7 @@ header {
                             width: 100%;
                             text-align: center;
                             padding: 1rem 0rem;
-                            &:hover {
-                                background-color: $violeta-claro;
-                            }
+                            @include hvr-bounce-to-bottom;
                             a {
                                 padding: 1rem 0rem;
                                 text-decoration: none;

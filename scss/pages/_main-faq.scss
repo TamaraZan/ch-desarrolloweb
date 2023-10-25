@@ -42,6 +42,8 @@
                 padding: 0.5vw 0;
                 margin-bottom: 4px;
                 @include box-shadow($faq-accord-shadow);
+                -webkit-animation: scale-in-ver-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                animation: scale-in-ver-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
                 p {
                     padding: 0.3vw 1.5vw;
                     margin: 0;
