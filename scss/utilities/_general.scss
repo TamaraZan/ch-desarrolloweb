@@ -17,30 +17,32 @@ body {
         margin: 0;
         padding: 0;
     }
-    main {
-        background-color: $violeta-claro;
-        background-image: url(../assets/fondo-index.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment:fixed;
-        text-shadow: 0.1px 0.1px 4px $blanco;
-        h1 {
-            @include titulo(2.5rem);
-        }
-        img {
-            @include img;
-        }
-        iframe {
-            border-radius: $radius;
-        }
-        .link {
-            text-shadow: 0px 0px 5px $violeta;
-        }
-        .separador {
-            width: calc(200px + 25vw);
-            padding-top: 4vh;
-            padding-bottom: 1vh;
-            box-shadow: none;
-        }
+}
+//originalmente dentro de "body"
+//puesto aparte para que el codigo sea más fácil de leer
+main {
+    background-color: $violeta-claro;
+    background-image: url(../assets/fondo-index.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    text-shadow: 0.1px 0.1px 4px $blanco;
+    h1 {
+        @include titulo(2.5rem);
+    }
+    img {
+        @include img;
+    }
+    iframe {
+        border-radius: $radius;
+    }
+    .link {
+        text-shadow: 0px 0px 5px $violeta;
+    }
+    .separador {
+        width: calc(200px + 25vw);
+        padding-top: 4vh;
+        padding-bottom: 1vh;
+        box-shadow: none;
     }
 }

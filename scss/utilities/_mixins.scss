@@ -28,7 +28,7 @@
     -moz-box-shadow: $valor;
 }
 @mixin fondo-oscuro {
-    background-color: transparentize($violeta, 0.2); // color viejo: #3d1a4fb9;
+    background-color: transparentize($violeta, 0.2);
     color: $blanco;
     text-shadow: none;
     border-radius: $radius;

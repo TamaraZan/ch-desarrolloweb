@@ -10,7 +10,7 @@
 @import "components/carousel";
 
 //header
-@import "components/header";    //COMPLETAR: chequear como queda el nuevo logo movil
+@import "components/header";
 //main de las paginas
 @import "pages/main-index";
 @import "pages/main-compras";
@@ -21,4 +21,4 @@
 @import "components/footer";
 
 //media queries
-@import "utilities/media-queries"; //COMPLETAR: elegir con qué modificacion de la animacion de las cards en productos me quedo
+@import "utilities/media-queries";

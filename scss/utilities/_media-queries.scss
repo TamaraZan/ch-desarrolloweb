@@ -11,11 +11,9 @@
                 display: block;
                 padding: 0.8vw 1.5vw;
                 div {
-                    .logo {
-                        a {
-                            .img-logo-movil {
-                                display: none;
-                            }
+                    .logo a {
+                        .img-logo-movil {
+                            display: none;
                         }
                     }
                     .hamburger-button {
@@ -34,26 +32,19 @@
         }
     }
     /* main nosotros */
-    .nosotros {
-        section {
-            .conocenos {
-                column-gap: 3vw;
-            }
-            .contacto {
-                column-gap: 3vw;
-            }
+    .nosotros section {
+        .conocenos, .contacto {
+            column-gap: 3vw;
         }
     }
     /* main productos */
-    .productos {
-        .productos-cards {
-            // modifica la animación para evitar el overflow (reduce la distancia de movimiento)
-            [data-aos="fade-left"] {
-                transform: translate3d(4vw,0,0);
-            }
-            [data-aos="fade-right"] {
-                transform: translate3d(-4vw,0,0);
-            }
+    .productos-cards {
+        // modifica la animación para evitar el overflow (reduce la distancia de movimiento)
+        [data-aos="fade-left"] {
+            transform: translate3d(4vw,0,0);
+        }
+        [data-aos="fade-right"] {
+            transform: translate3d(-4vw,0,0);
         }
     }
 }
@@ -61,29 +52,19 @@
 /* movil */ 
 @media screen and (max-width: 768px) {
     /* general */
-    body {
-        main {
-            .separador {
-                max-width: 95%;
-            }
+    main {
+        .separador {
+            max-width: 95%;
         }
     }
     /* header */
-    header {
-        nav {
-            .nav-small {
-                div {
-                    .logo {
-                        a {
-                            .img-logo-movil {
-                                display: block;
-                            }
-                            .img-logo-tablet {
-                                display: none;
-                            }
-                        }
-                    }
-                }
+    .nav-small div {
+        .logo a {
+            .img-logo-movil {
+                display: block;
+            }
+            .img-logo-tablet {
+                display: none;
             }
         }
     }
@@ -103,14 +84,12 @@
         }
         #carousel-inicio-sm {
             display: initial;
-            .carousel-main {
-                .carousel-item {
-                    img {
-                        height: 50vw;
-                        width: 80%;
-                        margin: 6% 10%;
-                        object-fit: cover;
-                    }
+            .carousel-main .carousel-item {
+                img {
+                    height: 50vw;
+                    width: 80%;
+                    margin: 6% 10%;
+                    object-fit: cover;
                 }
             }
         }
@@ -133,61 +112,48 @@
         }
     }
     /* main nosotros */
-    .nosotros {
-        section {
-            .conocenos {
-                grid-template-columns: 1fr;
-                div {
-                    margin: 4vw 5.5vw 0 5.5vw;
-                }
-            }
-            .contacto {
-                grid-template-columns: 100%;
-                .contacto-mapa {
-                    padding: 15px 0;
-                }
-            }
+    .conocenos {
+        grid-template-columns: 1fr;
+        div {
+            margin: 4vw 5.5vw 0 5.5vw;
+        }
+    }
+    .contacto {
+        grid-template-columns: 100%;
+        .contacto-mapa {
+            padding: 15px 0;
         }
     }
     /* main productos */
-    .productos {
-        .productos-cards {
-            //modifica la animación (las transforma a fade-up)
-            [data-aos="fade-left"], [data-aos="fade-right"] {
-                transform: translate3d(0,100px,0);
+    .productos-cards {
+        //modifica las animaciónes (las transforma a fade-up)
+        [data-aos="fade-left"], [data-aos="fade-right"] {
+            transform: translate3d(0,100px,0);
+        }
+        .productos-card {
+            margin: 0 0 30px 0;
+            grid-template-columns: 1fr;
+            &:nth-of-type(odd) div:last-child {
+                grid-area: 3 / 1 / span 1;
             }
-            .productos-card {
-                margin: 0 0 30px 0;
-                grid-template-columns: 1fr;
-                
-                &:nth-of-type(odd) {
-                    div:last-child {
-                        grid-area: 3 / 1 / span 1;
-                    }
-                }
-                &:nth-of-type(even) {
-                    div:last-child {
-                        grid-area: 3 / 1 / span 1;
-                    }
-                }
+            &:nth-of-type(even) div:last-child {
+                grid-area: 3 / 1 / span 1;
             }
         }
     }
     /* footer */
-    footer {
-        .footer-grid {
-            display: flex;
-            flex-wrap: wrap-reverse;
-            justify-content: space-evenly;
-            gap: 20px;
-        }
+    .footer-grid {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: space-evenly;
+        gap: 20px;
     }
 }
 @media screen and (max-width: 436px) {
     /* main nosotros */
     .nosotros section .contacto .contacto-info {
         width: 250px;
-        @include grid-center(1fr, 0);
+        grid-template-columns: 1fr;
         svg {
             display: none;
         } 

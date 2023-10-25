@@ -7,60 +7,53 @@
         h1 {
             padding-bottom: 2vw;
         }
-        .conocenos {
-            @include fondo-oscuro;
-            @include grid-center (55fr 45fr, 0 4vw);
-            div {
-                margin: 2.5vw 0 1.5vw 4vw;
-                p {
-                    span {
-                        color: lighten($color: $blanco, $amount: 6);
-                        font-style: italic;
-                    }
-                }
-            }
-            img {
-                object-fit: cover;
-            }
-        }
         h2 {
             @include titulo(2rem);
             padding-bottom: 2vw;
         }
-        .contacto {
-            @include grid-center (50fr 50fr, 0 8vw);
-            .contacto-info {
-                justify-self: center;
-                @include grid-center (repeat(2, auto), 20px);
-                justify-items: center;
-                padding: 5px;
-                @include glassmorphism($radius, $glass-blur);
-                svg {
-                    box-shadow: none;
-                    width: 90%;
-                    max-width: 80px;
-                    fill: $violeta;
-                }
-            }
-            .contacto-mapa {
-                grid-row: 2;
-                padding-top: 2vw;
-                iframe {
-                    width: 100%;
-                    outline: $violeta-claro 1px solid;
-                }
-            }
-            .contacto-form {
-                grid-row: span 2;
-            }
-        }
     }
 }
 
-
-
-
-  
-
-
-
+//originalmente dentro de ".nosotros section"
+//puesto aparte para que el codigo sea más fácil de leer
+.conocenos {
+    @include fondo-oscuro;
+    @include grid-center (55fr 45fr, 0 4vw);
+    div {
+        margin: 2.5vw 0 1.5vw 4vw;
+        p span {
+            color: lighten($color: $blanco, $amount: 6);
+            font-style: italic;
+        }
+    }
+    img {
+        object-fit: cover;
+    }
+}
+.contacto {
+    @include grid-center (50fr 50fr, 0 8vw);
+    .contacto-info {
+        justify-self: center;
+        @include grid-center (repeat(2, auto), 20px);
+        justify-items: center;
+        padding: 5px;
+        @include glassmorphism($radius, $glass-blur);
+        svg {
+            box-shadow: none;
+            width: 90%;
+            max-width: 80px;
+            fill: $violeta;
+        }
+    }
+    .contacto-mapa {
+        grid-row: 2;
+        padding-top: 2vw;
+        iframe {
+            width: 100%;
+            outline: $violeta-claro 1px solid;
+        }
+    }
+    .contacto-form {
+        grid-row: span 2;
+    }
+}

@@ -770,10 +770,7 @@ footer .footer-copyright {
   /* main nosotros */
   .nosotros section .contacto .contacto-info {
     width: 250px;
-    display: grid;
     grid-template-columns: 1fr;
-    align-items: center;
-    gap: 0;
   }
   .nosotros section .contacto .contacto-info svg {
     display: none;
