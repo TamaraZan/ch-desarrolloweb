@@ -11,7 +11,7 @@
                 display: block;
                 padding: 0.8vw 1.5vw;
                 div {
-                    .logo a {
+                    .logo {
                         .img-logo-movil {
                             display: none;
                         }
@@ -59,7 +59,7 @@
     }
     /* header */
     header nav .nav-small div {
-        .logo a {
+        .logo  {
             .img-logo-movil {
                 display: block;
             }
@@ -154,11 +154,9 @@
     .nosotros section .contacto .contacto-info {
         width: 250px;
         grid-template-columns: 1fr;
+        text-align: center;
         svg {
             display: none;
-        } 
-        div {
-            text-align: center;
         }
     }
     /* footer */

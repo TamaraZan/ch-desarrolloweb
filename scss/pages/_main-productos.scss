@@ -1,17 +1,13 @@
 /* main productos */
 .productos {
     @extend %fondo;
-    div { 
+    section, article, div { 
         padding: 10px;
     }
 }
-//originalmente dentro de ".productos productos-cards"
-//puesto aparte para que el codigo sea más fácil de leer
 .productos-intro {
     margin: 0 5vw;
-    p {
-        text-align: center;
-    }
+    text-align: center;
 }
 .productos-card {
     margin: 0 5vw 30px 5vw;

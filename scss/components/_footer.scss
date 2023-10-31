@@ -10,7 +10,7 @@ footer {
             gap: 10px;
             padding-right: 1.3vw;
             padding-bottom: 0.9vh;
-            div a img {
+            a img {
                 @include img;
                 border-radius: 15px;
             }

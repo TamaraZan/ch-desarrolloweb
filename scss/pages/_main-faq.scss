@@ -3,7 +3,7 @@
     @extend %fondo;
     @include flex (columna, n/a);
     gap: 2vw;
-    div {
+    section {
         details:not(:first-child) {
             border-top: solid 1px $violeta-claro;
         }

@@ -2,12 +2,10 @@
 .compras {
     @extend %fondo;
     @include flex (columna, n/a);
-    div {
-        .compras-texto {
-            padding: 0 4vw;
-            font-size: 1.3em;
-            text-align: center;
-        }
+    .compras-texto {
+        padding: 0 4vw;
+        font-size: 1.3em;
+        text-align: center;
     }
     .compras-columnas {
         padding: 3% 0;

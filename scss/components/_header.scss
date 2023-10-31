@@ -52,11 +52,8 @@ header {
     .logo {
         @include flex (n/a, center);
         height: 100px;
-        a {
+        img {
             height: 100%;
-            img {
-                height: 100%;
-            }
         }
     }
     ul {

@@ -235,10 +235,7 @@ header .logo {
   align-items: center;
   height: 100px;
 }
-header .logo a {
-  height: 100%;
-}
-header .logo a img {
+header .logo img {
   height: 100%;
 }
 header ul {
@@ -396,7 +393,7 @@ header .nav-small {
   display: flex;
   flex-direction: column;
 }
-.compras div .compras-texto {
+.compras .compras-texto {
   padding: 0 4vw;
   font-size: 1.3em;
   text-align: center;
@@ -423,19 +420,19 @@ header .nav-small {
   flex-direction: column;
   gap: 2vw;
 }
-.faq div details:not(:first-child) {
+.faq section details:not(:first-child) {
   border-top: solid 1px #5b1f7e;
 }
-.faq div :first-child summary {
+.faq section :first-child summary {
   border-radius: 10px 10px 0px 0px;
 }
-.faq div :last-child summary {
+.faq section :last-child summary {
   border-radius: 0px 0px 10px 10px;
 }
-.faq div :last-child[open] summary {
+.faq section :last-child[open] summary {
   border-radius: 0px;
 }
-.faq div details summary {
+.faq section details summary {
   padding: 15px 2.5vw;
   background-color: #4a0b6e;
   color: #c9c0ce;
@@ -445,10 +442,10 @@ header .nav-small {
   cursor: pointer;
   text-shadow: none;
 }
-.faq div details[open] summary {
+.faq section details[open] summary {
   background-color: #5b1f7e;
 }
-.faq div details div {
+.faq section details div {
   border-radius: 0 0 10px 10px;
   background-color: #a98ac1;
   padding: 0.5vw 0;
@@ -459,7 +456,7 @@ header .nav-small {
   -webkit-animation: scale-in-ver-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: scale-in-ver-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-.faq div details div p {
+.faq section details div p {
   padding: 0.3vw 1.5vw;
   margin: 0;
   text-shadow: none;
@@ -549,14 +546,12 @@ header .nav-small {
 }
 
 /* main productos */
-.productos div {
+.productos section, .productos article, .productos div {
   padding: 10px;
 }
 
 .productos-intro {
   margin: 0 5vw;
-}
-.productos-intro p {
   text-align: center;
 }
 
@@ -634,7 +629,7 @@ footer .footer-grid .footer-redes {
   padding-right: 1.3vw;
   padding-bottom: 0.9vh;
 }
-footer .footer-grid .footer-redes div a img {
+footer .footer-grid .footer-redes a img {
   border-radius: 5px;
   box-shadow: 10px 10px 12px -2px rgba(0, 0, 0, 0.6509803922);
   -webkit-box-shadow: 10px 10px 12px -2px rgba(0, 0, 0, 0.6509803922);
@@ -660,7 +655,7 @@ footer .footer-copyright {
     display: block;
     padding: 0.8vw 1.5vw;
   }
-  header nav .nav-small div .logo a .img-logo-movil {
+  header nav .nav-small div .logo .img-logo-movil {
     display: none;
   }
   header nav .nav-small div .hamburger-button {
@@ -695,10 +690,10 @@ footer .footer-copyright {
     max-width: 95%;
   }
   /* header */
-  header nav .nav-small div .logo a .img-logo-movil {
+  header nav .nav-small div .logo .img-logo-movil {
     display: block;
   }
-  header nav .nav-small div .logo a .img-logo-tablet {
+  header nav .nav-small div .logo .img-logo-tablet {
     display: none;
   }
   /* main inicio */
@@ -779,12 +774,10 @@ footer .footer-copyright {
   .nosotros section .contacto .contacto-info {
     width: 250px;
     grid-template-columns: 1fr;
+    text-align: center;
   }
   .nosotros section .contacto .contacto-info svg {
     display: none;
-  }
-  .nosotros section .contacto .contacto-info div {
-    text-align: center;
   }
   /* footer */
   footer .footer-grid .footer-nav {

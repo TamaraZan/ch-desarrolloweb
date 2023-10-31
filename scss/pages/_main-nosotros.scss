@@ -13,9 +13,6 @@
         }
     }
 }
-
-//originalmente dentro de ".nosotros section"
-//puesto aparte para que el codigo sea más fácil de leer
 .conocenos {
     @include fondo-oscuro;
     @include grid-center (55fr 45fr, 0 4vw);
