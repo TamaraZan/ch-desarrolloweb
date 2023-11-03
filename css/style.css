@@ -546,7 +546,13 @@ header .nav-small {
 }
 
 /* main productos */
-.productos section, .productos article, .productos div {
+.productos section {
+  padding: 10px;
+}
+.productos section article {
+  padding: 10px;
+}
+.productos section article div {
   padding: 10px;
 }
 

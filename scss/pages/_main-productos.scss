@@ -1,9 +1,15 @@
 /* main productos */
 .productos {
     @extend %fondo;
-    section, article, div { 
+    section {
         padding: 10px;
-    }
+        article {
+            padding: 10px;
+            div { 
+                padding: 10px;
+            }
+        }
+    } 
 }
 .productos-intro {
     margin: 0 5vw;
@@ -39,8 +45,14 @@
             margin: 0;
         }
     }
-    .carousel .carousel-main .carousel-item img {
-        cursor: zoom-in;
+    .carousel {
+        .carousel-main {
+            .carousel-item {
+                img {
+                    cursor: zoom-in;
+                }
+            }
+        }
     }
 }
 

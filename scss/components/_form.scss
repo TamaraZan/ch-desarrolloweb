@@ -6,45 +6,47 @@
     .form-titulo {
         @include titulo-componente;
     }
-    form div {
-        @include flex (columna, n/a);
-        width: 97%;
-        label {
-            margin: 0px 5px;
-        }
-        *:not(label) {
-            padding: 5px;
-            margin: 5px;
-            width: 100%;
-            border-radius: 7.5px;
-            background-color: $blanco;
-            border: $violeta-claro 2px solid;
-            transition: box-shadow 0.2s;
-            &:focus {
-                outline: none;
-                @include box-shadow(0 0 10px 2px $violeta-claro);
-                transition: box-shadow 0.25s;
+    form {
+        div {
+            @include flex (columna, n/a);
+            width: 97%;
+            label {
+                margin: 0px 5px;
             }
-        }
-        textarea {
-            height: 100px;
-        }
-        .input-imagenes {
-            font-size: 0.8em; 
-            &::file-selector-button {
-                background-color: $lila;
-                font-size: initial;
+            *:not(label) {
+                padding: 5px;
+                margin: 5px;
+                width: 100%;
+                border-radius: 7.5px;
+                background-color: $blanco;
+                border: $violeta-claro 2px solid;
+                transition: box-shadow 0.2s;
+                &:focus {
+                    outline: none;
+                    @include box-shadow(0 0 10px 2px $violeta-claro);
+                    transition: box-shadow 0.25s;
+                }
             }
-        }
-        input[type="submit"] {
-            width: 60%;
-            margin: 15px 0 5px 21%;
-            padding: 10px 0;
-            background-color: $violeta;
-            color: $blanco;
-            &:hover {
-                -webkit-animation: color-change-3x 4s linear infinite alternate both;
-                animation: color-change-3x 4s linear infinite alternate both;
+            textarea {
+                height: 100px;
+            }
+            .input-imagenes {
+                font-size: 0.8em; 
+                &::file-selector-button {
+                    background-color: $lila;
+                    font-size: initial;
+                }
+            }
+            input[type="submit"] {
+                width: 60%;
+                margin: 15px 0 5px 21%;
+                padding: 10px 0;
+                background-color: $violeta;
+                color: $blanco;
+                &:hover {
+                    -webkit-animation: color-change-3x 4s linear infinite alternate both;
+                    animation: color-change-3x 4s linear infinite alternate both;
+                }
             }
         }
     }
