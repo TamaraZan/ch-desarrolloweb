@@ -1,36 +1,6 @@
 /* media queries */
 /* tablet */
 @media screen and (max-width: 1024px) {
-    /* header */
-    header {
-        nav {
-            .nav-large {
-                display: none;
-            }
-            .nav-small {
-                display: block;
-                padding: 0.8vw 1.5vw;
-                div {
-                    .logo {
-                        .img-logo-movil {
-                            display: none;
-                        }
-                    }
-                    .hamburger-button {
-                        border: 2px solid transparentize($color: $blanco, $amount: 0.4);
-                        margin-right: 0.3vw;
-                        &:focus {
-                            @include box-shadow(2px 2px 7px #000000a6);
-                        }
-                        .hamburger-icon {
-                            background-image: url(../assets/iconos/hamburger-icon.svg);
-                            background-size: 150%;
-                        }
-                    }
-                }
-            }
-        }
-    }
     /* main nosotros */
     .nosotros section {
         .conocenos, .contacto {
@@ -48,6 +18,32 @@
         }
     }
 }
+@media screen and (max-width: 991px) {
+    /* header */
+    header {
+        .navbar {
+            padding: 0.8vw 0;
+            div {
+                .logo {
+                    img {
+                        padding-left: 3vw;
+                    }
+                }
+                .hamburger-button {
+                    border: 2px solid transparentize($color: $blanco, $amount: 0.4);
+                    margin-right: 5.3vw;
+                    &:focus {
+                        @include box-shadow(2px 2px 7px #000000a6);
+                    }
+                    .hamburger-icon {
+                        background-image: url(../assets/iconos/hamburger-icon.svg);
+                        background-size: 150%;
+                    }
+                }
+            }
+        }
+    }
+} 
 
 /* movil */ 
 @media screen and (max-width: 768px) {
@@ -55,17 +51,6 @@
     main {
         .separador {
             max-width: 95%;
-        }
-    }
-    /* header */
-    header nav .nav-small div {
-        .logo  {
-            .img-logo-movil {
-                display: block;
-            }
-            .img-logo-tablet {
-                display: none;
-            }
         }
     }
     /* main inicio */
@@ -150,6 +135,21 @@
     }
 }
 @media screen and (max-width: 436px) {
+    /* header */
+    header {
+        .navbar {
+            div {
+                .logo {
+                    .img-logo-movil {
+                        display: block;
+                    }
+                    .img-logo-tablet {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
     /* main nosotros */
     .nosotros section .contacto .contacto-info {
         width: 250px;

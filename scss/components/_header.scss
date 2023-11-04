@@ -1,36 +1,40 @@
 /* header */
-//header más fácil de leer
 header {
-    @include colores-header-footer;
-    .logo {
-        @include flex (n/a, center);
-        height: 100px;
-        img {
-            height: 100%;
-        }
-    }
-    ul {
-        display: flex;
-        justify-content: space-evenly;
-        border-top: solid $violeta-claro 2px;
-        li {
-            width: 100%;
-            text-align: center;
-            padding: 1rem 0rem;
-            @include hvr-bounce-to-bottom;
-            a {
-                padding: 1rem 0rem;
-                text-decoration: none;
-                button {    
+    .navbar {
+        @include colores-header-footer;
+        padding: 0;
+        div {
+            padding: 0;
+            .logo {
+                @include flex (n/a, center);
+                height: 100px;
+                img {
+                    height: 100%;
+                }
+                .img-logo-movil { 
+                    display: none;
+                }
+            }
+            ul {
+                width: 100vw;
+                border-top: solid $violeta-claro 2px;
+                li {
                     width: 100%;
-                    background-color: transparent;
-                    border: none;
-                    color: inherit;
+                    text-align: center;
+                    padding: 1rem 0rem;
+                    @include hvr-bounce-to-bottom;
+                    a {
+                        padding: 1rem 0rem;
+                        text-decoration: none;
+                        button {    
+                            width: 100%;
+                            background-color: transparent;
+                            border: none;
+                            color: inherit;
+                        }
+                    }
                 }
             }
         }
-    }
-    .nav-small {
-        display: none;
     }
 }
