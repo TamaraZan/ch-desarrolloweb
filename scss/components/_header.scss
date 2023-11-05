@@ -5,6 +5,7 @@ header {
         padding: 0;
         div {
             padding: 0;
+            width: 100%;
             .logo {
                 @include flex (n/a, center);
                 height: 100px;

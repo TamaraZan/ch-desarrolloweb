@@ -232,6 +232,7 @@ header .navbar {
 }
 header .navbar div {
   padding: 0;
+  width: 100%;
 }
 header .navbar div .logo {
   display: flex;
