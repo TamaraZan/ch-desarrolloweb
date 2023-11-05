@@ -247,7 +247,7 @@ header .navbar div .logo .img-logo-movil {
   display: none;
 }
 header .navbar div ul {
-  width: 100vw;
+  width: 100%;
   border-top: solid #5b1f7e 2px;
 }
 header .navbar div ul li {
